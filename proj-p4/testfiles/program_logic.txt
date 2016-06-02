@@ -1,0 +1,41 @@
+VLD $1, 0001
+VLD $2, 0002
+VLD $9, 0009
+VLD $10, 000a
+VNOP
+VANDad $3, $2, $2
+VANDud $4, $2, $2
+VANDdd $5, $2, $2
+VANDed $6, $2, $2
+VANDod $7, $2, $2
+VNOP
+VSD $3, 0003
+VSD $4, 0004
+VSD $5, 0005
+VSD $6, 0006
+VSD $7, 0007
+VNOP
+VORad $3, $9, $10
+VORud $4, $9, $10
+VORdd $5, $9, $10
+VORed $6, $9, $10
+VORod $7, $9, $10
+VNOP
+VSD $3, 0008
+VSD $4, 0009
+VSD $5, 000a
+VSD $6, 000b
+VSD $7, 000c
+VNOP
+VXORad $3, $9, $1
+VXORud $4, $9, $1
+VXORdd $5, $9, $1
+VXORed $6, $9, $1
+VXORod $7, $9, $1
+VNOP
+VSD $3, 000d
+VSD $4, 000e
+VSD $5, 000f
+VSD $6, 0010
+VSD $7, 0011
+VNOP

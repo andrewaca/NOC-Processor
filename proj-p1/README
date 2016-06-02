@@ -1,0 +1,7 @@
+README
+------
+
+To simulate tb_gold_ring, run "make sim" or "make simg". To simulate tb_gold_router, run "make sim TOP=tb_gold_router" or "make simg TOP=tb_gold_router".
+
+The current status is that the NOC router RTL and 4-Node Ring is completed and verified.
+ 

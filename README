@@ -1,0 +1,5 @@
+Tiled multi-core processor using a Network-on-Chip to connect four processors
+Part 1 – Synthesizeable RTL Verilog description of router and NoC with adequate testbenches
+Part 2 – Synthesizeable RTL Verilog description of processor with adequate testbenches
+Part 3 – RTL Verilog integration of NoC and processors
+Part 4 – Physical implementation (Synthesis, Formal Logical Equivalency, Static Timing Analysis, Place & Route)

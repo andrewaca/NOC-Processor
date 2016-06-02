@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : area
+Design : gold_cmp
+Version: F-2011.09-SP2
+Date   : Tue Apr 12 03:53:36 2016
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+Number of ports:                         1434
+Number of nets:                        220340
+Number of cells:                       219950
+Number of combinational cells:         206338
+Number of sequential cells:             13612
+Number of macros:                           0
+Number of buf/inv:                      70718
+Number of references:                      22
+
+Combinational area:       554718.695372
+Noncombinational area:    108597.894791
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          663316.590162
+Total area:                 undefined
+1

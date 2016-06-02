@@ -1,0 +1,5 @@
+80200001	// forwarding test start - legal load VLD $1, 0001 
+802A0002	// forwarding test start - illegal load VLD $1, 0002
+A82108C6 	// 101010 00001 00001 00001 00011 000110 - VADDbw $1, $1, $1
+84200003 	// forwarding test end - store $1, 3 - will stall
+00000000

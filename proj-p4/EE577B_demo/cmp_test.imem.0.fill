@@ -1,0 +1,24 @@
+f0000000  //  00   //no-op // Program for single packet read and write from processor       
+8020C001  //  04   //load NIC[1] into r1  					//read the output channel status register 
+88200014  //  08   //if r1 == 0 jump to instruction 20(1C)   	//if empty, go to instruction to fill it  
+f0000000  //  0C   //no-op
+88000020  //  10   //if r0 == 0 jump to instruction 32(20)		//if full jump to read check
+81000000  //  14   //load datamem[0] into r8    			//load packet to be sent out in register file
+8500C000  //  18   //store r8 into NIC[0]					//send packet out to NIC
+f0000000  //  1C   //no-op
+8020C003  //  20   //load NIC[3] into r1					//read the input channel status register
+8C200030  //  24   //if r1 != 0 jump to instruction 48(30)		//if full go to instruction to read it
+f0000000  //  28   //no-op
+88000020  //  2C   //if r0 == 0 jump to instruction 32(20)		//if empty loop around for Read write check again. 
+8100C002  //  30   //load NIC[2] into r8
+85000010  //  34   //store r8 into mem[16]
+f0000000  //  38   //no-op
+f0000000  //  3C   //no-op
+f0000000  //  40   //no-op
+f0000000  //  44   //no-op
+f0000000  //  48   //no-op
+00000000  //  4C   //halt
+00000000  //  50   //halt
+00000000  //  54   //halt
+00000000  //  58   //halt
+00000000  //  5C   //halt

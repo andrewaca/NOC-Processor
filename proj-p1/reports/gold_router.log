@@ -1,0 +1,23 @@
+ 
+****************************************
+check_design summary:
+Version:     F-2011.09-SP2
+Date:        Mon Mar  7 22:45:40 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+
+Nets                                                                4
+    Unloaded nets (LINT-2)                                          4
+--------------------------------------------------------------------------------
+
+Warning: In design 'inputBuffer_PE1', cell 'B_6' does not drive any nets. (LINT-1)
+Warning: In design 'inputBuffer_PE1', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'gold_router', net 'i0/net118' driven by pin 'i0/C1243/Z' has no loads. (LINT-2)
+Warning: In design 'gold_router', net 'i0/net117' driven by pin 'i0/C1244/Z' has no loads. (LINT-2)
+Warning: In design 'gold_router', net 'i1/net215' driven by pin 'i1/C1243/Z' has no loads. (LINT-2)
+Warning: In design 'gold_router', net 'i1/net214' driven by pin 'i1/C1244/Z' has no loads. (LINT-2)
+1

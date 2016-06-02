@@ -1,0 +1,9 @@
+ 802A0000  // illegal load
+ 842A0000  // illegal store
+ 882A0000  // illegal bez
+ 8C2A0000  // illegal bnez
+ A8620D0D  // illegal PPP
+ BC620C0D  // illegal opcode
+ A8620C00  // illegal alu func
+ A8620BC8  // illegal mult
+ 00000000

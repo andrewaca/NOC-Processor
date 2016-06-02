@@ -1,0 +1,8 @@
+VLD $1, 1
+VMULEUaw $2, $1, $0
+VADDaw $3, $2, $1
+VBNEZ $3, 14
+VSUBaw $3, $2, $1
+VSD $3, 0003 
+VSD $2, 0002 
+VNOP

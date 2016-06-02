@@ -1,0 +1,8 @@
+README
+------
+
+To run a specific test program, change to the scripts directory and run "perl compiler.pl ../include/program.txt", where program.txt can be changed to other test programs within the include directory. Next, return to the root directory of the project that includes makefile and run "make simg".
+
+To test illegal instructions, copy include/imem_... to the root directory and rename to imem.fill.
+
+The current status of this part of the project is that the processor is fully completed and verified.

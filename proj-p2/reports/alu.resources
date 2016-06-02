@@ -1,0 +1,362 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : resources
+Design : alu
+Version: F-2011.09-SP2
+Date   : Wed Mar 30 20:29:21 2016
+****************************************
+
+Resource Sharing Report for design alu in file
+        /home/scf-36/aadam/ee577b/proj-p2/design/alu.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r749     | DW01_add     | width=8    |               | add_117              |
+| r751     | DW01_add     | width=8    |               | add_118              |
+| r753     | DW01_add     | width=8    |               | add_119              |
+| r755     | DW01_add     | width=8    |               | add_120              |
+| r757     | DW01_add     | width=8    |               | add_121              |
+| r759     | DW01_add     | width=8    |               | add_122              |
+| r761     | DW01_add     | width=8    |               | add_123              |
+| r763     | DW01_add     | width=8    |               | add_124              |
+| r765     | DW01_add     | width=16   |               | add_128              |
+| r767     | DW01_add     | width=16   |               | add_129              |
+| r769     | DW01_add     | width=16   |               | add_130              |
+| r771     | DW01_add     | width=16   |               | add_131              |
+| r773     | DW01_add     | width=32   |               | add_135              |
+| r775     | DW01_add     | width=32   |               | add_136              |
+| r777     | DW01_add     | width=64   |               | add_140              |
+| r779     | DW01_sub     | width=8    |               | sub_151              |
+| r781     | DW01_sub     | width=8    |               | sub_152              |
+| r783     | DW01_sub     | width=8    |               | sub_153              |
+| r785     | DW01_sub     | width=8    |               | sub_154              |
+| r787     | DW01_sub     | width=8    |               | sub_155              |
+| r789     | DW01_sub     | width=8    |               | sub_156              |
+| r791     | DW01_sub     | width=8    |               | sub_157              |
+| r793     | DW01_sub     | width=8    |               | sub_158              |
+| r795     | DW01_sub     | width=16   |               | sub_162              |
+| r797     | DW01_sub     | width=16   |               | sub_163              |
+| r799     | DW01_sub     | width=16   |               | sub_164              |
+| r801     | DW01_sub     | width=16   |               | sub_165              |
+| r803     | DW01_sub     | width=32   |               | sub_169              |
+| r805     | DW01_sub     | width=32   |               | sub_170              |
+| r807     | DW01_sub     | width=64   |               | sub_174              |
+| r857     | DW_leftsh    | A_width=8  |               | sll_323              |
+|          |              | SH_width=3 |               |                      |
+| r859     | DW_leftsh    | A_width=8  |               | sll_324              |
+|          |              | SH_width=3 |               |                      |
+| r861     | DW_leftsh    | A_width=8  |               | sll_325              |
+|          |              | SH_width=3 |               |                      |
+| r863     | DW_leftsh    | A_width=8  |               | sll_326              |
+|          |              | SH_width=3 |               |                      |
+| r865     | DW_leftsh    | A_width=8  |               | sll_327              |
+|          |              | SH_width=3 |               |                      |
+| r867     | DW_leftsh    | A_width=8  |               | sll_328              |
+|          |              | SH_width=3 |               |                      |
+| r869     | DW_leftsh    | A_width=8  |               | sll_329              |
+|          |              | SH_width=3 |               |                      |
+| r871     | DW_leftsh    | A_width=8  |               | sll_330              |
+|          |              | SH_width=3 |               |                      |
+| r873     | DW_leftsh    | A_width=16 |               | sll_334              |
+|          |              | SH_width=4 |               |                      |
+| r875     | DW_leftsh    | A_width=16 |               | sll_335              |
+|          |              | SH_width=4 |               |                      |
+| r877     | DW_leftsh    | A_width=16 |               | sll_336              |
+|          |              | SH_width=4 |               |                      |
+| r879     | DW_leftsh    | A_width=16 |               | sll_337              |
+|          |              | SH_width=4 |               |                      |
+| r881     | DW_leftsh    | A_width=32 |               | sll_341              |
+|          |              | SH_width=5 |               |                      |
+| r883     | DW_leftsh    | A_width=32 |               | sll_342              |
+|          |              | SH_width=5 |               |                      |
+| r885     | DW_leftsh    | A_width=64 |               | sll_346              |
+|          |              | SH_width=6 |               |                      |
+| r887     | DW_leftsh    | A_width=8  |               | sll_357              |
+|          |              | SH_width=3 |               |                      |
+| r889     | DW_leftsh    | A_width=8  |               | sll_358              |
+|          |              | SH_width=3 |               |                      |
+| r891     | DW_leftsh    | A_width=8  |               | sll_359              |
+|          |              | SH_width=3 |               |                      |
+| r893     | DW_leftsh    | A_width=8  |               | sll_360              |
+|          |              | SH_width=3 |               |                      |
+| r895     | DW_leftsh    | A_width=8  |               | sll_361              |
+|          |              | SH_width=3 |               |                      |
+| r897     | DW_leftsh    | A_width=8  |               | sll_362              |
+|          |              | SH_width=3 |               |                      |
+| r899     | DW_leftsh    | A_width=8  |               | sll_363              |
+|          |              | SH_width=3 |               |                      |
+| r901     | DW_leftsh    | A_width=8  |               | sll_364              |
+|          |              | SH_width=3 |               |                      |
+| r903     | DW_leftsh    | A_width=16 |               | sll_368              |
+|          |              | SH_width=4 |               |                      |
+| r905     | DW_leftsh    | A_width=16 |               | sll_369              |
+|          |              | SH_width=4 |               |                      |
+| r907     | DW_leftsh    | A_width=16 |               | sll_370              |
+|          |              | SH_width=4 |               |                      |
+| r909     | DW_leftsh    | A_width=16 |               | sll_371              |
+|          |              | SH_width=4 |               |                      |
+| r911     | DW_leftsh    | A_width=32 |               | sll_375              |
+|          |              | SH_width=5 |               |                      |
+| r913     | DW_leftsh    | A_width=32 |               | sll_376              |
+|          |              | SH_width=5 |               |                      |
+| r915     | DW_leftsh    | A_width=64 |               | sll_380              |
+|          |              | SH_width=5 |               |                      |
+| r917     | DW_rightsh   | A_width=8  |               | srl_391              |
+|          |              | SH_width=3 |               |                      |
+| r919     | DW_rightsh   | A_width=8  |               | srl_392              |
+|          |              | SH_width=3 |               |                      |
+| r921     | DW_rightsh   | A_width=8  |               | srl_393              |
+|          |              | SH_width=3 |               |                      |
+| r923     | DW_rightsh   | A_width=8  |               | srl_394              |
+|          |              | SH_width=3 |               |                      |
+| r925     | DW_rightsh   | A_width=8  |               | srl_395              |
+|          |              | SH_width=3 |               |                      |
+| r927     | DW_rightsh   | A_width=8  |               | srl_396              |
+|          |              | SH_width=3 |               |                      |
+| r929     | DW_rightsh   | A_width=8  |               | srl_397              |
+|          |              | SH_width=3 |               |                      |
+| r931     | DW_rightsh   | A_width=8  |               | srl_398              |
+|          |              | SH_width=3 |               |                      |
+| r933     | DW_rightsh   | A_width=16 |               | srl_402              |
+|          |              | SH_width=4 |               |                      |
+| r935     | DW_rightsh   | A_width=16 |               | srl_403              |
+|          |              | SH_width=4 |               |                      |
+| r937     | DW_rightsh   | A_width=16 |               | srl_404              |
+|          |              | SH_width=4 |               |                      |
+| r939     | DW_rightsh   | A_width=16 |               | srl_405              |
+|          |              | SH_width=4 |               |                      |
+| r941     | DW_rightsh   | A_width=32 |               | srl_409              |
+|          |              | SH_width=5 |               |                      |
+| r943     | DW_rightsh   | A_width=32 |               | srl_410              |
+|          |              | SH_width=5 |               |                      |
+| r945     | DW_rightsh   | A_width=64 |               | srl_414              |
+|          |              | SH_width=6 |               |                      |
+| r947     | DW_rightsh   | A_width=8  |               | srl_425              |
+|          |              | SH_width=3 |               |                      |
+| r949     | DW_rightsh   | A_width=8  |               | srl_426              |
+|          |              | SH_width=3 |               |                      |
+| r951     | DW_rightsh   | A_width=8  |               | srl_427              |
+|          |              | SH_width=3 |               |                      |
+| r953     | DW_rightsh   | A_width=8  |               | srl_428              |
+|          |              | SH_width=3 |               |                      |
+| r955     | DW_rightsh   | A_width=8  |               | srl_429              |
+|          |              | SH_width=3 |               |                      |
+| r957     | DW_rightsh   | A_width=8  |               | srl_430              |
+|          |              | SH_width=3 |               |                      |
+| r959     | DW_rightsh   | A_width=8  |               | srl_431              |
+|          |              | SH_width=3 |               |                      |
+| r961     | DW_rightsh   | A_width=8  |               | srl_432              |
+|          |              | SH_width=3 |               |                      |
+| r963     | DW_rightsh   | A_width=16 |               | srl_436              |
+|          |              | SH_width=4 |               |                      |
+| r965     | DW_rightsh   | A_width=16 |               | srl_437              |
+|          |              | SH_width=4 |               |                      |
+| r967     | DW_rightsh   | A_width=16 |               | srl_438              |
+|          |              | SH_width=4 |               |                      |
+| r969     | DW_rightsh   | A_width=16 |               | srl_439              |
+|          |              | SH_width=4 |               |                      |
+| r971     | DW_rightsh   | A_width=32 |               | srl_443              |
+|          |              | SH_width=5 |               |                      |
+| r973     | DW_rightsh   | A_width=32 |               | srl_444              |
+|          |              | SH_width=5 |               |                      |
+| r975     | DW_rightsh   | A_width=64 |               | srl_448              |
+|          |              | SH_width=5 |               |                      |
+| r977     | DW_rightsh   | A_width=8  |               | sra_459              |
+|          |              | SH_width=3 |               |                      |
+| r979     | DW_rightsh   | A_width=8  |               | sra_460              |
+|          |              | SH_width=3 |               |                      |
+| r981     | DW_rightsh   | A_width=8  |               | sra_461              |
+|          |              | SH_width=3 |               |                      |
+| r983     | DW_rightsh   | A_width=8  |               | sra_462              |
+|          |              | SH_width=3 |               |                      |
+| r985     | DW_rightsh   | A_width=8  |               | sra_463              |
+|          |              | SH_width=3 |               |                      |
+| r987     | DW_rightsh   | A_width=8  |               | sra_464              |
+|          |              | SH_width=3 |               |                      |
+| r989     | DW_rightsh   | A_width=8  |               | sra_465              |
+|          |              | SH_width=3 |               |                      |
+| r991     | DW_rightsh   | A_width=8  |               | sra_466              |
+|          |              | SH_width=3 |               |                      |
+| r993     | DW_rightsh   | A_width=16 |               | sra_470              |
+|          |              | SH_width=4 |               |                      |
+| r995     | DW_rightsh   | A_width=16 |               | sra_471              |
+|          |              | SH_width=4 |               |                      |
+| r997     | DW_rightsh   | A_width=16 |               | sra_472              |
+|          |              | SH_width=4 |               |                      |
+| r999     | DW_rightsh   | A_width=16 |               | sra_473              |
+|          |              | SH_width=4 |               |                      |
+| r1001    | DW_rightsh   | A_width=32 |               | sra_477              |
+|          |              | SH_width=5 |               |                      |
+| r1003    | DW_rightsh   | A_width=32 |               | sra_478              |
+|          |              | SH_width=5 |               |                      |
+| r1005    | DW_rightsh   | A_width=64 |               | sra_482              |
+|          |              | SH_width=6 |               |                      |
+| r1007    | DW_rightsh   | A_width=8  |               | sra_493              |
+|          |              | SH_width=3 |               |                      |
+| r1009    | DW_rightsh   | A_width=8  |               | sra_494              |
+|          |              | SH_width=3 |               |                      |
+| r1011    | DW_rightsh   | A_width=8  |               | sra_495              |
+|          |              | SH_width=3 |               |                      |
+| r1013    | DW_rightsh   | A_width=8  |               | sra_496              |
+|          |              | SH_width=3 |               |                      |
+| r1015    | DW_rightsh   | A_width=8  |               | sra_497              |
+|          |              | SH_width=3 |               |                      |
+| r1017    | DW_rightsh   | A_width=8  |               | sra_498              |
+|          |              | SH_width=3 |               |                      |
+| r1019    | DW_rightsh   | A_width=8  |               | sra_499              |
+|          |              | SH_width=3 |               |                      |
+| r1021    | DW_rightsh   | A_width=8  |               | sra_500              |
+|          |              | SH_width=3 |               |                      |
+| r1023    | DW_rightsh   | A_width=16 |               | sra_504              |
+|          |              | SH_width=4 |               |                      |
+| r1025    | DW_rightsh   | A_width=16 |               | sra_505              |
+|          |              | SH_width=4 |               |                      |
+| r1027    | DW_rightsh   | A_width=16 |               | sra_506              |
+|          |              | SH_width=4 |               |                      |
+| r1029    | DW_rightsh   | A_width=16 |               | sra_507              |
+|          |              | SH_width=4 |               |                      |
+| r1031    | DW_rightsh   | A_width=32 |               | sra_511              |
+|          |              | SH_width=5 |               |                      |
+| r1033    | DW_rightsh   | A_width=32 |               | sra_512              |
+|          |              | SH_width=5 |               |                      |
+| r1035    | DW_rightsh   | A_width=64 |               | sra_516              |
+|          |              | SH_width=5 |               |                      |
+| r1037    | DW02_mult_2_stage | A_width=32 |          | ALU_MUL32            |
+|          |              | B_width=32 |               |                      |
+| r1624    | DW_mult_uns  | a_width=8  |               | mult_264             |
+|          |              | b_width=8  |               |                      |
+| r1626    | DW_mult_uns  | a_width=8  |               | mult_212             |
+|          |              | b_width=8  |               |                      |
+| r2213    | DW_mult_uns  | a_width=8  |               | mult_263             |
+|          |              | b_width=8  |               |                      |
+| r2215    | DW_mult_uns  | a_width=8  |               | mult_211             |
+|          |              | b_width=8  |               |                      |
+| r2802    | DW_mult_uns  | a_width=8  |               | mult_265             |
+|          |              | b_width=8  |               |                      |
+| r2804    | DW_mult_uns  | a_width=8  |               | mult_213             |
+|          |              | b_width=8  |               |                      |
+| r3391    | DW_mult_uns  | a_width=8  |               | mult_266             |
+|          |              | b_width=8  |               |                      |
+| r3393    | DW_mult_uns  | a_width=8  |               | mult_214             |
+|          |              | b_width=8  |               |                      |
+| r3980    | DW_mult_uns  | a_width=16 |               | mult_270             |
+|          |              | b_width=16 |               |                      |
+| r3982    | DW_mult_uns  | a_width=16 |               | mult_218             |
+|          |              | b_width=16 |               |                      |
+| r4569    | DW_mult_uns  | a_width=8  |               | mult_238             |
+|          |              | b_width=8  |               |                      |
+| r4571    | DW_mult_uns  | a_width=8  |               | mult_186             |
+|          |              | b_width=8  |               |                      |
+| r5158    | DW_mult_uns  | a_width=16 |               | mult_244             |
+|          |              | b_width=16 |               |                      |
+| r5160    | DW_mult_uns  | a_width=16 |               | mult_192             |
+|          |              | b_width=16 |               |                      |
+| r5747    | DW_mult_uns  | a_width=8  |               | mult_237             |
+|          |              | b_width=8  |               |                      |
+| r5749    | DW_mult_uns  | a_width=8  |               | mult_185             |
+|          |              | b_width=8  |               |                      |
+| r6336    | DW_mult_uns  | a_width=16 |               | mult_245             |
+|          |              | b_width=16 |               |                      |
+| r6338    | DW_mult_uns  | a_width=16 |               | mult_193             |
+|          |              | b_width=16 |               |                      |
+| r6925    | DW_mult_uns  | a_width=8  |               | mult_239             |
+|          |              | b_width=8  |               |                      |
+| r6927    | DW_mult_uns  | a_width=8  |               | mult_187             |
+|          |              | b_width=8  |               |                      |
+| r7514    | DW_mult_uns  | a_width=16 |               | mult_271             |
+|          |              | b_width=16 |               |                      |
+| r7516    | DW_mult_uns  | a_width=16 |               | mult_219             |
+|          |              | b_width=16 |               |                      |
+| r8103    | DW_mult_uns  | a_width=8  |               | mult_240             |
+|          |              | b_width=8  |               |                      |
+| r8105    | DW_mult_uns  | a_width=8  |               | mult_188             |
+|          |              | b_width=8  |               |                      |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| mult_218           | DW_mult_uns      | pparch (area,speed)                 |
+| add_130            | DW01_add         | pparch (area,speed)                 |
+| add_128            | DW01_add         | pparch (area,speed)                 |
+| mult_266           | DW_mult_uns      | pparch (area,speed)                 |
+| mult_264           | DW_mult_uns      | pparch (area,speed)                 |
+| mult_263           | DW_mult_uns      | pparch (area,speed)                 |
+| mult_265           | DW_mult_uns      | pparch (area,speed)                 |
+| sub_163            | DW01_sub         | pparch (area,speed)                 |
+| sub_162            | DW01_sub         | pparch (area,speed)                 |
+| sub_165            | DW01_sub         | pparch (area,speed)                 |
+| sub_164            | DW01_sub         | pparch (area,speed)                 |
+| add_131            | DW01_add         | pparch (area,speed)                 |
+| add_129            | DW01_add         | pparch (area,speed)                 |
+| mult_271           | DW_mult_uns      | pparch (area,speed)                 |
+| mult_270           | DW_mult_uns      | pparch (area,speed)                 |
+| mult_244           | DW_mult_uns      | pparch (area,speed)                 |
+| mult_245           | DW_mult_uns      | pparch (area,speed)                 |
+| sub_169            | DW01_sub         | pparch (area,speed)                 |
+| add_136            | DW01_add         | pparch (area,speed)                 |
+| add_135            | DW01_add         | pparch (area,speed)                 |
+| sub_170            | DW01_sub         | pparch (area,speed)                 |
+| mult_219           | DW_mult_uns      | pparch (area,speed)                 |
+| mult_192           | DW_mult_uns      | pparch (area,speed)                 |
+| mult_193           | DW_mult_uns      | pparch (area,speed)                 |
+| add_140            | DW01_add         | pparch (area,speed)                 |
+| sub_174            | DW01_sub         | pparch (area,speed)                 |
+| mult_211           | DW_mult_uns      | apparch (area)     |                |
+| mult_212           | DW_mult_uns      | apparch (area)     |                |
+| mult_213           | DW_mult_uns      | apparch (area)     |                |
+| mult_214           | DW_mult_uns      | apparch (area)     |                |
+| mult_185           | DW_mult_uns      | apparch (area)     |                |
+| mult_237           | DW_mult_uns      | apparch (area)     |                |
+| mult_186           | DW_mult_uns      | apparch (area)     |                |
+| mult_238           | DW_mult_uns      | apparch (area)     |                |
+| mult_187           | DW_mult_uns      | apparch (area)     |                |
+| mult_239           | DW_mult_uns      | apparch (area)     |                |
+| mult_188           | DW_mult_uns      | apparch (area)     |                |
+| mult_240           | DW_mult_uns      | apparch (area)     |                |
+| add_117            | DW01_add         | rpl                |                |
+| add_118            | DW01_add         | rpl                |                |
+| add_119            | DW01_add         | rpl                |                |
+| add_120            | DW01_add         | rpl                |                |
+| add_121            | DW01_add         | rpl                |                |
+| add_122            | DW01_add         | rpl                |                |
+| add_123            | DW01_add         | rpl                |                |
+| add_124            | DW01_add         | rpl                |                |
+| sub_151            | DW01_sub         | rpl                |                |
+| sub_152            | DW01_sub         | rpl                |                |
+| sub_153            | DW01_sub         | rpl                |                |
+| sub_154            | DW01_sub         | rpl                |                |
+| sub_155            | DW01_sub         | rpl                |                |
+| sub_156            | DW01_sub         | rpl                |                |
+| sub_157            | DW01_sub         | rpl                |                |
+| sub_158            | DW01_sub         | rpl                |                |
+| sll_341            | DW_leftsh        | astr (area)        |                |
+| sll_342            | DW_leftsh        | astr (area)        |                |
+| sll_346            | DW_leftsh        | astr (area)        |                |
+| sll_375            | DW_leftsh        | astr (area)        |                |
+| sll_376            | DW_leftsh        | astr (area)        |                |
+| sll_380            | DW_leftsh        | astr (area)        |                |
+| srl_409            | DW_rightsh       | astr (area)        |                |
+| srl_410            | DW_rightsh       | astr (area)        |                |
+| srl_414            | DW_rightsh       | astr (area)        |                |
+| srl_443            | DW_rightsh       | astr (area)        |                |
+| srl_444            | DW_rightsh       | astr (area)        |                |
+| srl_448            | DW_rightsh       | astr (area)        |                |
+| sra_477            | DW_rightsh       | astr (area)        |                |
+| sra_478            | DW_rightsh       | astr (area)        |                |
+| sra_482            | DW_rightsh       | astr (area)        |                |
+| sra_511            | DW_rightsh       | astr (area)        |                |
+| sra_512            | DW_rightsh       | astr (area)        |                |
+| sra_516            | DW_rightsh       | astr (area)        |                |
+| ALU_MUL32          | DW02_mult_2_stage | str               |                |
+===============================================================================
+
+
+No multiplexors to report
+1

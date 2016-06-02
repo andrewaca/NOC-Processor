@@ -1,0 +1,135 @@
+VNOTad $0, $0 ; Test Reg file addressing 
+VNOTad $1, $1
+VNOTad $2, $2
+VNOTad $3, $3
+VNOTad $4, $4
+VNOTad $5, $5
+VNOTad $6, $6
+VNOTad $7, $7
+VNOTad $8, $8
+VNOTad $9, $9
+VNOTad $10, $10
+VNOTad $11, $11
+VNOTad $12, $12
+VNOTad $13, $13
+VNOTad $14, $14
+VNOTad $15, $15
+VNOTad $16, $16
+VNOTad $17, $17
+VNOTad $18, $18
+VNOTad $19, $19
+VNOTad $20, $20
+VNOTad $21, $21
+VNOTad $22, $22
+VNOTad $23, $23
+VNOTad $24, $24
+VNOTad $25, $25
+VNOTad $26, $26
+VNOTad $27, $27
+VNOTad $28, $28
+VNOTad $29, $29
+VNOTad $30, $30
+VNOTad $31, $31
+VNOTud $1, $1 ; Test PPP
+VNOTdd $2, $2 ; Test PPP
+VNOTed $3, $3 ; Test PPP
+VNOTod $4, $4 ; Test PPP
+VXORad $1, $1, $2 ; Test XOR
+VXORad $2, $1, $2
+VXORad $3, $3, $4
+VXORad $4, $3, $4
+VMOVad $2, $1 ; Test MOV
+VMOVad $4, $3
+VLD $0, 1 ; Test Load
+VLD $1, 1
+VLD $2, 2
+VLD $3, 3
+VLD $4, 4
+VLD $5, 5
+VLD $6, 6
+VLD $7, 7
+VLD $8, 8
+VLD $9, 9
+VLD $10, A
+VLD $11, B
+VLD $12, C
+VLD $13, D
+VLD $14, E
+VLD $15, F
+VLD $16, 10
+VLD $17, 11
+VLD $18, 12
+VLD $19, 13
+VLD $20, 14
+VLD $21, 15
+VLD $22, 16
+VLD $23, 17
+VLD $24, 18
+VLD $25, 19
+VLD $26, 1A
+VLD $27, 1B
+VLD $28, 1C
+VLD $29, 1D
+VLD $30, 1E
+VLD $31, 1F
+VSLLIad $14, $17, 4  ; Test SLLI
+VNOP
+VADDob $14, $14, $17
+VNOP
+VSLLab $15, $16, $14 ; Test SLL
+VSLLah $15, $16, $14
+VSLLaw $15, $16, $14
+VSLLad $15, $16, $14
+VSLLIab $13, $16, 4  ; Test SLLI
+VSLLIah $13, $17, 4
+VSLLIaw $13, $18, 4
+VSLLIad $13, $19, 4
+VSRLab $15, $31, $14  ; Test SRL
+VSRLah $15, $31, $14
+VSRLaw $15, $31, $14
+VSRLad $15, $31, $14
+VNOP
+VSD $15, 1
+VSRLIab $13, $17, 4  ; Test SRLI
+VSRLIah $13, $18, 4
+VSRLIaw $13, $19, 4
+VSRLIad $13, $20, 4
+VSRAab $15, $31, $14  ; Test SRA
+VSRAah $15, $31, $30
+VSRAaw $15, $31, $30
+VSRAad $15, $31, $30
+VSRAIab $13, $31, 4  ; Test SRAI
+VSRAIah $13, $31, 4
+VSRAIaw $13, $31, 4
+VSRAIad $13, $31, 4
+VLD $1, 1			; Forwarding from WB to EX
+VADDad $1, $1, $1	; Continuous forwarding
+VADDad $1, $1, $1
+VADDad $1, $1, $1
+VADDad $1, $1, $1
+VNOP
+VSD $13, D
+VSD $14, E
+VSD $15, F
+VADDad $1, $1, $1	; Stall Add for VSD in ID
+VSD $1, 1			; Stall Add for VSD in ID
+VADDad $1, $1, $1	; Stall Add for VSD in ID
+VSD $1, 2			; Stall Add for VSD in ID
+VLD $2, 2			; Test data memory internally forwarding
+VSD $2, 3			; Stall until VLD in WB
+VADDad $3, $1, $1	; Forward $3 to Ex from EB
+VADDad $4, $3, $3	; Receive $3 from WB and then stall 1 cycle
+VSD $4, 4			; Wait until previous instruction is in WB
+VLD $5, 4			; Forward WB to EX
+VADDad $6, $5, $5	; Receive $5 from EX, then stall
+VSD $6, 6			; Wait for stall to complete
+VLD $8, 7			; Forward WB to EX
+VSUBad $9, $8, $8	; Receive $8 from EX
+VADDud $10, $16, $31 ; Test forwarding with PPP
+VADDed $10, $10, $1
+VADDed $10, $10, $1
+VORod $11, $31, $1
+VORod $10, $31, $11
+VNOP
+VNOP
+VNOP

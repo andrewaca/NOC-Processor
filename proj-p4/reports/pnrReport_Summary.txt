@@ -1,0 +1,13 @@
+Changes in timing constraint file for PnR
+---------------------------------------------
+We had to increase the clock period in our SDC file to fix set-up time violations. The increased clock period is 14 ns.
+
+Test-bench changes for simulation of routed net-list
+----------------------------------------------------------
+We had to increase the clock period to 14 ns in our test-bench to run simulations on the final routed net-list.
+
+Other remarks
+----------------
+For the SDF file generation, we used the command-line statement "delayCal -sdf sdf/gold_cmp_pnr.sdf -nocell".
+	- This excludes the delays of the cells (these will be read from the libraries) and includes only the inter-connect delays. 
+	- If the "-nocell" option wasn't used, we got a lot of timing-violation warnings during the simulation.

@@ -1,0 +1,12 @@
+VLD $1, 0001
+VLD $2, 0002
+VNOP
+VANDad $3, $2, $1
+VNOP
+VSD $3, 0003
+VANDad $3, $2, $1
+VANDad $3, $2, $1
+VANDad $3, $2, $1
+VANDad $3, $2, $1
+VANDad $3, $2, $1
+VNOP

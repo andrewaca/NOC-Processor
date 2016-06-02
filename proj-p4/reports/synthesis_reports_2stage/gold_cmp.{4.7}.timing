@@ -1,0 +1,177 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'gold_cmp' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : gold_cmp
+Version: F-2011.09-SP2
+Date   : Tue Apr 12 06:48:43 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: node2_d_in[63]
+              (input port clocked by clk)
+  Endpoint: proc_2/WB_alu_result_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    1.00       1.50 f
+  node2_d_in[63] (in)                                     0.00       1.50 f
+  proc_2/dataIn[63] (gold_processor_1)                    0.00       1.50 f
+  proc_2/U1427/Y (AOI22X1)                                0.02       1.52 r
+  proc_2/U251/Y (AND2X2)                                  0.03       1.56 r
+  proc_2/U949/Y (INVX1)                                   0.02       1.58 f
+  proc_2/U1424/Y (AOI21X1)                                0.02       1.60 r
+  proc_2/U890/Y (BUFX2)                                   0.04       1.63 r
+  proc_2/U1412/Y (OAI21X1)                                0.02       1.66 f
+  proc_2/ALU/oprB[63] (alu_1)                             0.00       1.66 f
+  proc_2/ALU/U25/Y (BUFX2)                                0.05       1.71 f
+  proc_2/ALU/sub_174/B[0] (alu_1_DW01_sub_15)             0.00       1.71 f
+  proc_2/ALU/sub_174/U556/Y (AND2X2)                      0.05       1.76 f
+  proc_2/ALU/sub_174/U1020/Y (OAI21X1)                    0.04       1.80 r
+  proc_2/ALU/sub_174/U1019/Y (OAI21X1)                    0.03       1.83 f
+  proc_2/ALU/sub_174/U1017/Y (OAI21X1)                    0.04       1.87 r
+  proc_2/ALU/sub_174/U1016/Y (OAI21X1)                    0.02       1.89 f
+  proc_2/ALU/sub_174/U1164/Y (INVX1)                      0.00       1.90 r
+  proc_2/ALU/sub_174/U635/Y (OR2X2)                       0.04       1.94 r
+  proc_2/ALU/sub_174/U636/Y (INVX1)                       0.02       1.96 f
+  proc_2/ALU/sub_174/U1012/Y (OAI21X1)                    0.05       2.01 r
+  proc_2/ALU/sub_174/U624/Y (OR2X1)                       0.04       2.04 r
+  proc_2/ALU/sub_174/U637/Y (INVX1)                       0.02       2.06 f
+  proc_2/ALU/sub_174/U667/Y (OR2X2)                       0.04       2.10 f
+  proc_2/ALU/sub_174/U1008/Y (OAI21X1)                    0.04       2.14 r
+  proc_2/ALU/sub_174/U1007/Y (OAI21X1)                    0.02       2.16 f
+  proc_2/ALU/sub_174/U587/Y (AND2X1)                      0.03       2.20 f
+  proc_2/ALU/sub_174/U1030/Y (INVX1)                      0.00       2.20 r
+  proc_2/ALU/sub_174/U678/Y (AND2X2)                      0.03       2.23 r
+  proc_2/ALU/sub_174/U677/Y (INVX1)                       0.02       2.25 f
+  proc_2/ALU/sub_174/U1003/Y (AOI21X1)                    0.02       2.27 r
+  proc_2/ALU/sub_174/U699/Y (BUFX2)                       0.04       2.31 r
+  proc_2/ALU/sub_174/U967/Y (NAND3X1)                     0.01       2.32 f
+  proc_2/ALU/sub_174/U671/Y (AND2X2)                      0.03       2.35 f
+  proc_2/ALU/sub_174/U670/Y (AND2X2)                      0.04       2.39 f
+  proc_2/ALU/sub_174/U1026/Y (INVX1)                      0.00       2.38 r
+  proc_2/ALU/sub_174/U579/Y (AND2X2)                      0.04       2.42 r
+  proc_2/ALU/sub_174/U954/Y (OAI21X1)                     0.02       2.44 f
+  proc_2/ALU/sub_174/U953/Y (OAI21X1)                     0.02       2.46 r
+  proc_2/ALU/sub_174/U940/Y (NAND3X1)                     0.02       2.48 f
+  proc_2/ALU/sub_174/U578/Y (AND2X2)                      0.04       2.51 f
+  proc_2/ALU/sub_174/U938/Y (OAI21X1)                     0.04       2.55 r
+  proc_2/ALU/sub_174/U612/Y (INVX1)                       0.03       2.58 f
+  proc_2/ALU/sub_174/U933/Y (AOI21X1)                     0.03       2.61 r
+  proc_2/ALU/sub_174/U673/Y (OR2X2)                       0.04       2.65 r
+  proc_2/ALU/sub_174/U618/Y (AND2X1)                      0.03       2.69 r
+  proc_2/ALU/sub_174/U922/Y (OAI21X1)                     0.02       2.71 f
+  proc_2/ALU/sub_174/U577/Y (AND2X2)                      0.04       2.75 f
+  proc_2/ALU/sub_174/U920/Y (OAI21X1)                     0.04       2.79 r
+  proc_2/ALU/sub_174/U634/Y (INVX2)                       0.02       2.81 f
+  proc_2/ALU/sub_174/U914/Y (OAI21X1)                     0.02       2.83 r
+  proc_2/ALU/sub_174/U680/Y (AND2X2)                      0.03       2.86 r
+  proc_2/ALU/sub_174/U681/Y (INVX1)                       0.02       2.88 f
+  proc_2/ALU/sub_174/U901/Y (OAI21X1)                     0.05       2.93 r
+  proc_2/ALU/sub_174/U702/Y (AND2X1)                      0.03       2.95 r
+  proc_2/ALU/sub_174/U703/Y (INVX1)                       0.02       2.98 f
+  proc_2/ALU/sub_174/U891/Y (NAND3X1)                     0.03       3.01 r
+  proc_2/ALU/sub_174/U674/Y (AND2X2)                      0.04       3.05 r
+  proc_2/ALU/sub_174/U662/Y (INVX1)                       0.02       3.06 f
+  proc_2/ALU/sub_174/U885/Y (OAI21X1)                     0.05       3.11 r
+  proc_2/ALU/sub_174/U1218/Y (INVX2)                      0.02       3.13 f
+  proc_2/ALU/sub_174/U881/Y (AOI21X1)                     0.03       3.17 r
+  proc_2/ALU/sub_174/U672/Y (OR2X2)                       0.04       3.21 r
+  proc_2/ALU/sub_174/U675/Y (AND2X2)                      0.03       3.25 r
+  proc_2/ALU/sub_174/U676/Y (AND2X2)                      0.04       3.28 r
+  proc_2/ALU/sub_174/U834/Y (NAND3X1)                     0.01       3.29 f
+  proc_2/ALU/sub_174/U682/Y (BUFX2)                       0.04       3.33 f
+  proc_2/ALU/sub_174/U1141/Y (INVX1)                      0.00       3.33 r
+  proc_2/ALU/sub_174/U700/Y (AND2X2)                      0.03       3.36 r
+  proc_2/ALU/sub_174/U701/Y (INVX1)                       0.02       3.38 f
+  proc_2/ALU/sub_174/U821/Y (OAI21X1)                     0.04       3.42 r
+  proc_2/ALU/sub_174/U820/Y (OAI21X1)                     0.02       3.45 f
+  proc_2/ALU/sub_174/U819/Y (OAI21X1)                     0.10       3.55 r
+  proc_2/ALU/sub_174/U814/Y (AOI21X1)                     0.02       3.57 f
+  proc_2/ALU/sub_174/U1108/Y (BUFX2)                      0.04       3.60 f
+  proc_2/ALU/sub_174/U810/Y (OAI21X1)                     0.04       3.64 r
+  proc_2/ALU/sub_174/U805/Y (AOI21X1)                     0.02       3.67 f
+  proc_2/ALU/sub_174/U696/Y (BUFX2)                       0.04       3.71 f
+  proc_2/ALU/sub_174/U801/Y (OAI21X1)                     0.04       3.75 r
+  proc_2/ALU/sub_174/U796/Y (AOI21X1)                     0.02       3.77 f
+  proc_2/ALU/sub_174/U1038/Y (INVX1)                      0.01       3.78 r
+  proc_2/ALU/sub_174/U1039/Y (INVX1)                      0.01       3.79 f
+  proc_2/ALU/sub_174/U792/Y (OAI21X1)                     0.05       3.84 r
+  proc_2/ALU/sub_174/U787/Y (AOI21X1)                     0.02       3.86 f
+  proc_2/ALU/sub_174/U697/Y (BUFX2)                       0.04       3.90 f
+  proc_2/ALU/sub_174/U781/Y (OAI21X1)                     0.04       3.94 r
+  proc_2/ALU/sub_174/U776/Y (AOI21X1)                     0.02       3.96 f
+  proc_2/ALU/sub_174/U1041/Y (INVX1)                      0.01       3.97 r
+  proc_2/ALU/sub_174/U1042/Y (INVX1)                      0.01       3.98 f
+  proc_2/ALU/sub_174/U772/Y (OAI21X1)                     0.05       4.03 r
+  proc_2/ALU/sub_174/U767/Y (AOI21X1)                     0.02       4.06 f
+  proc_2/ALU/sub_174/U1044/Y (INVX1)                      0.00       4.06 r
+  proc_2/ALU/sub_174/U658/Y (INVX1)                       0.02       4.07 f
+  proc_2/ALU/sub_174/U763/Y (OAI21X1)                     0.05       4.12 r
+  proc_2/ALU/sub_174/U758/Y (AOI21X1)                     0.02       4.15 f
+  proc_2/ALU/sub_174/U698/Y (BUFX2)                       0.04       4.19 f
+  proc_2/ALU/sub_174/U754/Y (OAI21X1)                     0.04       4.23 r
+  proc_2/ALU/sub_174/U749/Y (AOI21X1)                     0.02       4.26 f
+  proc_2/ALU/sub_174/U1045/Y (INVX1)                      0.00       4.26 r
+  proc_2/ALU/sub_174/U660/Y (INVX1)                       0.02       4.27 f
+  proc_2/ALU/sub_174/U747/Y (OAI21X1)                     0.04       4.32 r
+  proc_2/ALU/sub_174/U1217/Y (INVX2)                      0.02       4.34 f
+  proc_2/ALU/sub_174/U745/Y (OAI21X1)                     0.04       4.38 r
+  proc_2/ALU/sub_174/U744/Y (OAI21X1)                     0.03       4.41 f
+  proc_2/ALU/sub_174/U737/Y (OAI21X1)                     0.04       4.45 r
+  proc_2/ALU/sub_174/U1216/Y (INVX2)                      0.02       4.48 f
+  proc_2/ALU/sub_174/U735/Y (OAI21X1)                     0.04       4.52 r
+  proc_2/ALU/sub_174/U734/Y (OAI21X1)                     0.03       4.54 f
+  proc_2/ALU/sub_174/U732/Y (AOI21X1)                     0.03       4.57 r
+  proc_2/ALU/sub_174/U1165/Y (INVX1)                      0.03       4.60 f
+  proc_2/ALU/sub_174/U731/Y (OAI21X1)                     0.02       4.62 r
+  proc_2/ALU/sub_174/U668/Y (OR2X1)                       0.04       4.66 r
+  proc_2/ALU/sub_174/U729/Y (AOI22X1)                     0.03       4.69 f
+  proc_2/ALU/sub_174/U704/Y (BUFX2)                       0.04       4.73 f
+  proc_2/ALU/sub_174/U665/Y (XOR2X1)                      0.03       4.76 f
+  proc_2/ALU/sub_174/DIFF[63] (alu_1_DW01_sub_15)         0.00       4.76 f
+  proc_2/ALU/U6447/Y (AOI22X1)                            0.04       4.80 r
+  proc_2/ALU/U6448/Y (AND2X2)                             0.04       4.84 r
+  proc_2/ALU/U6449/Y (NAND3X1)                            0.01       4.85 f
+  proc_2/ALU/U513/Y (OR2X2)                               0.04       4.89 f
+  proc_2/ALU/U514/Y (INVX1)                               0.00       4.89 r
+  proc_2/ALU/U525/Y (AND2X2)                              0.03       4.92 r
+  proc_2/ALU/U526/Y (INVX1)                               0.02       4.93 f
+  proc_2/ALU/U6468/Y (AOI22X1)                            0.03       4.96 r
+  proc_2/ALU/U530/Y (INVX1)                               0.02       4.99 f
+  proc_2/ALU/U497/Y (OR2X2)                               0.04       5.02 f
+  proc_2/ALU/U6475/Y (NOR3X1)                             0.02       5.05 r
+  proc_2/ALU/U4980/Y (INVX2)                              0.02       5.07 f
+  proc_2/ALU/U6476/Y (AOI21X1)                            0.02       5.09 r
+  proc_2/ALU/U6477/Y (AOI21X1)                            0.02       5.11 f
+  proc_2/ALU/result[0] (alu_1)                            0.00       5.11 f
+  proc_2/U2061/Y (AND2X1)                                 0.03       5.14 f
+  proc_2/WB_alu_result_reg[0]/D (DFFPOSX1)                0.00       5.14 f
+  data arrival time                                                  5.14
+
+  clock clk (rise edge)                                   4.70       4.70
+  clock network delay (ideal)                             0.50       5.20
+  proc_2/WB_alu_result_reg[0]/CLK (DFFPOSX1)              0.00       5.20 r
+  library setup time                                     -0.06       5.14
+  data required time                                                 5.14
+  --------------------------------------------------------------------------
+  data required time                                                 5.14
+  data arrival time                                                 -5.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

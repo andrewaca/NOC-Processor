@@ -1,0 +1,134 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'gold_cmp' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : gold_cmp
+Version: F-2011.09-SP2
+Date   : Mon Apr 11 19:57:23 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: proc_1/ALU/ALU_MUL32/mult_96/clk_r_REG38_S1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: proc_1/WB_alu_result_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  proc_1/ALU/ALU_MUL32/mult_96/clk_r_REG38_S1/CLK (DFFPOSX1)
+                                                          0.00 #     0.50 r
+  proc_1/ALU/ALU_MUL32/mult_96/clk_r_REG38_S1/Q (DFFPOSX1)
+                                                          0.10       0.60 f
+  proc_1/ALU/ALU_MUL32/mult_96/U3543/Y (INVX2)            0.05       0.66 r
+  proc_1/ALU/ALU_MUL32/mult_96/U3488/Y (OR2X1)            0.04       0.70 r
+  proc_1/ALU/ALU_MUL32/mult_96/U3850/Y (INVX1)            0.02       0.72 f
+  proc_1/ALU/ALU_MUL32/mult_96/U3486/Y (OR2X1)            0.05       0.77 f
+  proc_1/ALU/ALU_MUL32/mult_96/U4658/Y (INVX1)            0.01       0.78 r
+  proc_1/ALU/ALU_MUL32/mult_96/U4002/Y (AND2X2)           0.04       0.82 r
+  proc_1/ALU/ALU_MUL32/mult_96/U4003/Y (INVX1)            0.02       0.84 f
+  proc_1/ALU/ALU_MUL32/mult_96/U3453/Y (OR2X2)            0.05       0.89 f
+  proc_1/ALU/ALU_MUL32/mult_96/U4047/Y (INVX1)            0.00       0.89 r
+  proc_1/ALU/ALU_MUL32/mult_96/U4044/Y (AND2X2)           0.03       0.92 r
+  proc_1/ALU/ALU_MUL32/mult_96/U4045/Y (INVX1)            0.02       0.93 f
+  proc_1/ALU/ALU_MUL32/mult_96/U3097/Y (OAI21X1)          0.06       0.99 r
+  proc_1/ALU/ALU_MUL32/mult_96/U3979/Y (AND2X2)           0.04       1.03 r
+  proc_1/ALU/ALU_MUL32/mult_96/U3980/Y (INVX4)            0.03       1.06 f
+  proc_1/ALU/ALU_MUL32/mult_96/U2743/Y (OAI21X1)          0.05       1.11 r
+  proc_1/ALU/ALU_MUL32/mult_96/U3444/Y (XNOR2X1)          0.07       1.18 r
+  proc_1/ALU/ALU_MUL32/mult_96/U962/YS (FAX1)             0.10       1.28 f
+  proc_1/ALU/ALU_MUL32/mult_96/U959/YC (FAX1)             0.09       1.37 f
+  proc_1/ALU/ALU_MUL32/mult_96/U948/YC (FAX1)             0.09       1.46 f
+  proc_1/ALU/ALU_MUL32/mult_96/U938/YS (FAX1)             0.09       1.55 f
+  proc_1/ALU/ALU_MUL32/mult_96/U937/YS (FAX1)             0.08       1.63 r
+  proc_1/ALU/ALU_MUL32/mult_96/U3615/Y (OR2X1)            0.04       1.67 r
+  proc_1/ALU/ALU_MUL32/mult_96/U3683/Y (INVX1)            0.02       1.69 f
+  proc_1/ALU/ALU_MUL32/mult_96/U4063/Y (OR2X2)            0.05       1.73 f
+  proc_1/ALU/ALU_MUL32/mult_96/U4064/Y (INVX1)            0.01       1.74 r
+  proc_1/ALU/ALU_MUL32/mult_96/U483/Y (AOI21X1)           0.02       1.76 f
+  proc_1/ALU/ALU_MUL32/mult_96/U4626/Y (INVX1)            0.00       1.76 r
+  proc_1/ALU/ALU_MUL32/mult_96/U4627/Y (INVX1)            0.02       1.78 f
+  proc_1/ALU/ALU_MUL32/mult_96/U444/Y (OAI21X1)           0.04       1.83 r
+  proc_1/ALU/ALU_MUL32/mult_96/U442/Y (AOI21X1)           0.02       1.85 f
+  proc_1/ALU/ALU_MUL32/mult_96/U4087/Y (BUFX2)            0.04       1.89 f
+  proc_1/ALU/ALU_MUL32/mult_96/U358/Y (OAI21X1)           0.05       1.93 r
+  proc_1/ALU/ALU_MUL32/mult_96/U3806/Y (INVX1)            0.03       1.96 f
+  proc_1/ALU/ALU_MUL32/mult_96/U3807/Y (INVX1)            0.01       1.97 r
+  proc_1/ALU/ALU_MUL32/mult_96/U349/Y (XNOR2X1)           0.04       2.00 r
+  proc_1/ALU/ALU_MUL32/mult_96/product[49] (alu_2_DW_mult_tc_1)
+                                                          0.00       2.00 r
+  proc_1/ALU/ALU_MUL32/PRODUCT[49] (alu_2_DW02_mult_2_stage_0)
+                                                          0.00       2.00 r
+  proc_1/ALU/mult32_result[14] (alu_2)                    0.00       2.00 r
+  proc_1/U2010/Y (AOI22X1)                                0.02       2.03 f
+  proc_1/U185/Y (BUFX2)                                   0.10       2.13 f
+  proc_1/U128/Y (AND2X1)                                  0.05       2.18 f
+  proc_1/U178/Y (INVX1)                                   0.02       2.20 r
+  proc_1/U2154/Y (AOI22X1)                                0.01       2.22 f
+  proc_1/U1613/Y (INVX1)                                  0.04       2.26 r
+  proc_1/ALU/oprA[14] (alu_2)                             0.00       2.26 r
+  proc_1/ALU/U476/Y (INVX1)                               0.05       2.31 f
+  proc_1/ALU/U604/Y (INVX8)                               0.08       2.38 r
+  proc_1/ALU/mult_211/a[1] (alu_2_DW_mult_uns_10)         0.00       2.38 r
+  proc_1/ALU/mult_211/U184/Y (AND2X1)                     0.03       2.42 r
+  proc_1/ALU/mult_211/U57/YC (HAX1)                       0.06       2.48 r
+  proc_1/ALU/mult_211/U55/YS (FAX1)                       0.10       2.58 f
+  proc_1/ALU/mult_211/U13/YC (FAX1)                       0.09       2.67 f
+  proc_1/ALU/mult_211/U12/YC (FAX1)                       0.08       2.75 f
+  proc_1/ALU/mult_211/U11/YC (FAX1)                       0.08       2.84 f
+  proc_1/ALU/mult_211/U10/YC (FAX1)                       0.08       2.92 f
+  proc_1/ALU/mult_211/U9/YC (FAX1)                        0.08       3.01 f
+  proc_1/ALU/mult_211/U8/YC (FAX1)                        0.08       3.09 f
+  proc_1/ALU/mult_211/U7/YC (FAX1)                        0.08       3.17 f
+  proc_1/ALU/mult_211/U6/YC (FAX1)                        0.08       3.26 f
+  proc_1/ALU/mult_211/U5/YC (FAX1)                        0.08       3.34 f
+  proc_1/ALU/mult_211/U4/YC (FAX1)                        0.08       3.43 f
+  proc_1/ALU/mult_211/U3/YC (FAX1)                        0.08       3.51 f
+  proc_1/ALU/mult_211/U2/YC (FAX1)                        0.07       3.59 f
+  proc_1/ALU/mult_211/product[15] (alu_2_DW_mult_uns_10)
+                                                          0.00       3.59 f
+  proc_1/ALU/U8430/Y (AOI22X1)                            0.03       3.62 r
+  proc_1/ALU/U663/Y (BUFX2)                               0.04       3.66 r
+  proc_1/ALU/U8434/Y (NAND3X1)                            0.02       3.67 f
+  proc_1/ALU/U3464/Y (INVX1)                              0.00       3.67 r
+  proc_1/ALU/U3465/Y (INVX1)                              0.01       3.69 f
+  proc_1/ALU/U8443/Y (NOR3X1)                             0.05       3.74 r
+  proc_1/ALU/U655/Y (AND2X2)                              0.03       3.77 r
+  proc_1/ALU/U656/Y (INVX1)                               0.02       3.78 f
+  proc_1/ALU/U8444/Y (AOI21X1)                            0.02       3.80 r
+  proc_1/ALU/U629/Y (BUFX2)                               0.03       3.83 r
+  proc_1/ALU/U669/Y (AND2X2)                              0.03       3.87 r
+  proc_1/ALU/U670/Y (INVX1)                               0.02       3.88 f
+  proc_1/ALU/U8445/Y (AOI22X1)                            0.04       3.92 r
+  proc_1/ALU/U631/Y (BUFX2)                               0.04       3.96 r
+  proc_1/ALU/U622/Y (AND2X2)                              0.03       3.99 r
+  proc_1/ALU/U623/Y (INVX1)                               0.02       4.00 f
+  proc_1/ALU/result[0] (alu_2)                            0.00       4.00 f
+  proc_1/U167/Y (AND2X1)                                  0.03       4.04 f
+  proc_1/WB_alu_result_reg[0]/D (DFFPOSX1)                0.00       4.04 f
+  data arrival time                                                  4.04
+
+  clock clk (rise edge)                                   3.60       3.60
+  clock network delay (ideal)                             0.50       4.10
+  proc_1/WB_alu_result_reg[0]/CLK (DFFPOSX1)              0.00       4.10 r
+  library setup time                                     -0.06       4.04
+  data required time                                                 4.04
+  --------------------------------------------------------------------------
+  data required time                                                 4.04
+  data arrival time                                                 -4.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

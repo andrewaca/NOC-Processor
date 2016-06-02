@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : area
+Design : gold_processor
+Version: F-2011.09-SP2
+Date   : Wed Mar 30 20:29:08 2016
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+Number of ports:                          228
+Number of nets:                          2647
+Number of cells:                         2263
+Number of combinational cells:           1988
+Number of sequential cells:               272
+Number of macros:                           0
+Number of buf/inv:                        925
+Number of references:                      22
+
+Combinational area:       128136.263256
+Noncombinational area:    19642.081764
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          147778.345020
+Total area:                 undefined
+1

@@ -1,0 +1,139 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'gold_cmp' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : gold_cmp
+Version: F-2011.09-SP2
+Date   : Thu Apr 21 01:44:47 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: node3_d_in[58]
+              (input port clocked by clk)
+  Endpoint: proc_3/WB_alu_result_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    1.00       1.50 r
+  node3_d_in[58] (in)                                     0.00       1.50 r
+  proc_3/dataIn[58] (gold_processor_1)                    0.00       1.50 r
+  proc_3/U475/Y (AND2X2)                                  0.03       1.53 r
+  proc_3/U339/Y (INVX1)                                   0.02       1.55 f
+  proc_3/U1879/Y (OAI21X1)                                0.04       1.59 r
+  proc_3/ALU/oprB[58] (alu_1)                             0.00       1.59 r
+  proc_3/ALU/U97/Y (INVX2)                                0.03       1.62 f
+  proc_3/ALU/U3830/Y (INVX8)                              0.03       1.65 r
+  proc_3/ALU/add_114/B[5] (alu_1_DW01_add_15)             0.00       1.65 r
+  proc_3/ALU/add_114/U548/Y (OR2X2)                       0.04       1.69 r
+  proc_3/ALU/add_114/U662/Y (INVX1)                       0.02       1.70 f
+  proc_3/ALU/add_114/U872/Y (OR2X2)                       0.04       1.74 f
+  proc_3/ALU/add_114/U873/Y (INVX1)                       0.01       1.74 r
+  proc_3/ALU/add_114/U575/Y (AND2X2)                      0.03       1.78 r
+  proc_3/ALU/add_114/U476/Y (INVX1)                       0.02       1.80 f
+  proc_3/ALU/add_114/U386/Y (OAI21X1)                     0.04       1.84 r
+  proc_3/ALU/add_114/U312/Y (AOI21X1)                     0.02       1.86 f
+  proc_3/ALU/add_114/U605/Y (BUFX2)                       0.03       1.90 f
+  proc_3/ALU/add_114/U937/Y (INVX1)                       0.00       1.89 r
+  proc_3/ALU/add_114/U594/Y (AND2X2)                      0.03       1.92 r
+  proc_3/ALU/add_114/U595/Y (INVX1)                       0.01       1.94 f
+  proc_3/ALU/add_114/U636/Y (AND2X2)                      0.03       1.97 f
+  proc_3/ALU/add_114/U637/Y (INVX1)                       0.00       1.97 r
+  proc_3/ALU/add_114/U199/Y (AOI21X1)                     0.01       1.98 f
+  proc_3/ALU/add_114/U646/Y (BUFX2)                       0.04       2.02 f
+  proc_3/ALU/add_114/U193/Y (OAI21X1)                     0.04       2.06 r
+  proc_3/ALU/add_114/U185/Y (AOI21X1)                     0.02       2.08 f
+  proc_3/ALU/add_114/U650/Y (BUFX2)                       0.04       2.12 f
+  proc_3/ALU/add_114/U179/Y (OAI21X1)                     0.04       2.16 r
+  proc_3/ALU/add_114/U171/Y (AOI21X1)                     0.02       2.18 f
+  proc_3/ALU/add_114/U606/Y (BUFX2)                       0.03       2.22 f
+  proc_3/ALU/add_114/U938/Y (INVX1)                       0.00       2.21 r
+  proc_3/ALU/add_114/U598/Y (AND2X2)                      0.03       2.24 r
+  proc_3/ALU/add_114/U543/Y (OR2X2)                       0.04       2.28 r
+  proc_3/ALU/add_114/U157/Y (AOI21X1)                     0.01       2.30 f
+  proc_3/ALU/add_114/U607/Y (BUFX2)                       0.04       2.33 f
+  proc_3/ALU/add_114/U502/Y (OR2X2)                       0.04       2.37 f
+  proc_3/ALU/add_114/U601/Y (AND2X2)                      0.03       2.40 f
+  proc_3/ALU/add_114/U602/Y (INVX1)                       0.00       2.40 r
+  proc_3/ALU/add_114/U143/Y (AOI21X1)                     0.01       2.42 f
+  proc_3/ALU/add_114/U670/Y (BUFX2)                       0.04       2.45 f
+  proc_3/ALU/add_114/U932/Y (OAI21X1)                     0.04       2.49 r
+  proc_3/ALU/add_114/U129/Y (AOI21X1)                     0.02       2.51 f
+  proc_3/ALU/add_114/U608/Y (BUFX2)                       0.03       2.55 f
+  proc_3/ALU/add_114/U939/Y (INVX1)                       0.00       2.55 r
+  proc_3/ALU/add_114/U596/Y (AND2X2)                      0.03       2.58 r
+  proc_3/ALU/add_114/U597/Y (INVX1)                       0.01       2.59 f
+  proc_3/ALU/add_114/U936/Y (AND2X2)                      0.04       2.63 f
+  proc_3/ALU/add_114/U515/Y (OAI21X1)                     0.04       2.67 r
+  proc_3/ALU/add_114/U516/Y (INVX2)                       0.02       2.69 f
+  proc_3/ALU/add_114/U931/Y (OAI21X1)                     0.04       2.73 r
+  proc_3/ALU/add_114/U101/Y (AOI21X1)                     0.02       2.75 f
+  proc_3/ALU/add_114/U604/Y (BUFX2)                       0.04       2.79 f
+  proc_3/ALU/add_114/U95/Y (OAI21X1)                      0.04       2.83 r
+  proc_3/ALU/add_114/U87/Y (AOI21X1)                      0.02       2.85 f
+  proc_3/ALU/add_114/U651/Y (BUFX2)                       0.04       2.89 f
+  proc_3/ALU/add_114/U81/Y (OAI21X1)                      0.04       2.93 r
+  proc_3/ALU/add_114/U73/Y (AOI21X1)                      0.02       2.95 f
+  proc_3/ALU/add_114/U924/Y (BUFX2)                       0.04       2.99 f
+  proc_3/ALU/add_114/U67/Y (OAI21X1)                      0.04       3.03 r
+  proc_3/ALU/add_114/U59/Y (AOI21X1)                      0.02       3.05 f
+  proc_3/ALU/add_114/U652/Y (BUFX2)                       0.04       3.09 f
+  proc_3/ALU/add_114/U53/Y (OAI21X1)                      0.04       3.13 r
+  proc_3/ALU/add_114/U45/Y (AOI21X1)                      0.02       3.15 f
+  proc_3/ALU/add_114/U933/Y (BUFX2)                       0.04       3.18 f
+  proc_3/ALU/add_114/U39/Y (OAI21X1)                      0.04       3.23 r
+  proc_3/ALU/add_114/U31/Y (AOI21X1)                      0.02       3.25 f
+  proc_3/ALU/add_114/U653/Y (BUFX2)                       0.04       3.28 f
+  proc_3/ALU/add_114/U25/Y (OAI21X1)                      0.04       3.32 r
+  proc_3/ALU/add_114/U17/Y (AOI21X1)                      0.02       3.35 f
+  proc_3/ALU/add_114/U654/Y (BUFX2)                       0.04       3.38 f
+  proc_3/ALU/add_114/U11/Y (OAI21X1)                      0.06       3.44 r
+  proc_3/ALU/add_114/U9/YC (FAX1)                         0.06       3.50 r
+  proc_3/ALU/add_114/U568/Y (AND2X2)                      0.03       3.53 r
+  proc_3/ALU/add_114/U553/Y (OR2X2)                       0.04       3.57 r
+  proc_3/ALU/add_114/U552/Y (OR2X2)                       0.05       3.62 r
+  proc_3/ALU/add_114/U7/YC (FAX1)                         0.07       3.69 r
+  proc_3/ALU/add_114/U6/YC (FAX1)                         0.07       3.76 r
+  proc_3/ALU/add_114/U5/YC (FAX1)                         0.07       3.84 r
+  proc_3/ALU/add_114/U4/YC (FAX1)                         0.07       3.91 r
+  proc_3/ALU/add_114/U3/YS (FAX1)                         0.08       3.99 f
+  proc_3/ALU/add_114/SUM[62] (alu_1_DW01_add_15)          0.00       3.99 f
+  proc_3/ALU/U7966/Y (AOI22X1)                            0.02       4.02 r
+  proc_3/ALU/U1693/Y (INVX1)                              0.02       4.04 f
+  proc_3/ALU/U1694/Y (INVX1)                              0.00       4.04 r
+  proc_3/ALU/U3588/Y (NAND3X1)                            0.02       4.06 f
+  proc_3/ALU/U3571/Y (INVX1)                              0.00       4.06 r
+  proc_3/ALU/U971/Y (AND2X2)                              0.03       4.09 r
+  proc_3/ALU/U972/Y (INVX1)                               0.01       4.10 f
+  proc_3/ALU/result[1] (alu_1)                            0.00       4.10 f
+  proc_3/U660/Y (INVX1)                                   0.00       4.10 r
+  proc_3/U278/Y (OR2X2)                                   0.03       4.14 r
+  proc_3/U279/Y (INVX1)                                   0.01       4.15 f
+  proc_3/WB_alu_result_reg[1]/D (DFFPOSX1)                0.00       4.15 f
+  data arrival time                                                  4.15
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.50       2.50
+  proc_3/WB_alu_result_reg[1]/CLK (DFFPOSX1)              0.00       2.50 r
+  library setup time                                     -0.06       2.44
+  data required time                                                 2.44
+  --------------------------------------------------------------------------
+  data required time                                                 2.44
+  data arrival time                                                 -4.15
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.71
+
+
+1

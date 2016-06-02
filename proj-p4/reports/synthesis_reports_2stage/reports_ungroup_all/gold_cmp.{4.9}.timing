@@ -1,0 +1,159 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'gold_cmp' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : gold_cmp
+Version: F-2011.09-SP2
+Date   : Tue Apr 12 03:53:36 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: node3_d_in[11]
+              (input port clocked by clk)
+  Endpoint: proc_3/WB_alu_result_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    1.00       1.50 r
+  node3_d_in[11] (in)                                     0.00       1.50 r
+  U1445320/Y (AOI22X1)                                    0.02       1.52 f
+  U1478900/Y (AND2X2)                                     0.09       1.61 f
+  U1558166/Y (OAI21X1)                                    0.07       1.68 r
+  U1451262/Y (INVX1)                                      0.05       1.73 f
+  U1451263/Y (INVX8)                                      0.06       1.79 r
+  U1519130/Y (AND2X1)                                     0.04       1.83 r
+  U1519131/Y (INVX1)                                      0.04       1.87 f
+  U1535858/Y (INVX1)                                      0.10       1.96 r
+  U1545391/Y (AND2X1)                                     0.05       2.01 r
+  U1545392/Y (INVX1)                                      0.10       2.12 f
+  U1560614/Y (MUX2X1)                                     0.07       2.19 r
+  U1448113/Y (OR2X1)                                      0.05       2.24 r
+  U1523731/Y (INVX1)                                      0.05       2.29 f
+  U1426901/YS (FAX1)                                      0.12       2.41 r
+  U1426887/YS (FAX1)                                      0.10       2.51 r
+  U1536388/Y (INVX1)                                      0.03       2.54 f
+  U1426840/Y (AOI21X1)                                    0.03       2.57 r
+  U1513903/Y (BUFX2)                                      0.03       2.60 r
+  U1426839/Y (AOI21X1)                                    0.01       2.61 f
+  U1513902/Y (BUFX2)                                      0.04       2.66 f
+  U1426838/Y (OAI21X1)                                    0.02       2.68 r
+  U1535693/Y (INVX1)                                      0.02       2.70 f
+  U1426837/Y (AOI21X1)                                    0.02       2.72 r
+  U1528530/Y (BUFX2)                                      0.05       2.77 r
+  U1426833/Y (AOI21X1)                                    0.03       2.80 f
+  U1518615/Y (BUFX2)                                      0.05       2.85 f
+  U1426827/Y (OAI21X1)                                    0.04       2.89 r
+  U1532353/Y (INVX1)                                      0.02       2.91 f
+  U1426826/Y (AOI21X1)                                    0.02       2.93 r
+  U1484287/Y (INVX1)                                      0.02       2.95 f
+  U1445832/Y (INVX2)                                      0.03       2.98 r
+  U1426822/Y (AOI21X1)                                    0.03       3.01 f
+  U1483873/Y (INVX1)                                      0.01       3.01 r
+  U1483874/Y (INVX1)                                      0.02       3.03 f
+  U1426818/Y (AOI21X1)                                    0.03       3.06 r
+  U1532169/Y (INVX1)                                      0.02       3.08 f
+  U1426817/Y (OAI21X1)                                    0.06       3.14 r
+  U1426811/Y (AOI21X1)                                    0.04       3.18 f
+  U1455096/Y (BUFX2)                                      0.03       3.21 f
+  U1426810/Y (AOI21X1)                                    0.01       3.23 r
+  U1479488/Y (INVX1)                                      0.05       3.27 f
+  U1426807/Y (AOI21X1)                                    0.04       3.31 r
+  U1522958/Y (BUFX2)                                      0.03       3.35 r
+  U1426806/Y (AOI21X1)                                    0.01       3.36 f
+  U1522957/Y (BUFX2)                                      0.05       3.40 f
+  U1426803/Y (OAI21X1)                                    0.04       3.45 r
+  U1530915/Y (INVX1)                                      0.02       3.47 f
+  U1426802/Y (AOI21X1)                                    0.02       3.49 r
+  U1528506/Y (BUFX2)                                      0.05       3.54 r
+  U1426798/Y (AOI21X1)                                    0.03       3.57 f
+  U1518200/Y (BUFX2)                                      0.04       3.62 f
+  U1426795/Y (OAI21X1)                                    0.04       3.66 r
+  U1426794/Y (OAI21X1)                                    0.04       3.70 f
+  U1426790/Y (OAI21X1)                                    0.04       3.74 r
+  U1530953/Y (INVX1)                                      0.02       3.76 f
+  U1426789/Y (AOI21X1)                                    0.02       3.78 r
+  U1527765/Y (BUFX2)                                      0.05       3.83 r
+  U1426788/Y (OAI21X1)                                    0.02       3.85 f
+  U1531006/Y (INVX1)                                      0.00       3.85 r
+  U1426787/Y (AOI21X1)                                    0.01       3.86 f
+  U1518517/Y (BUFX2)                                      0.05       3.91 f
+  U1426784/Y (OAI21X1)                                    0.04       3.95 r
+  U1531000/Y (INVX1)                                      0.02       3.97 f
+  U1426783/Y (AOI21X1)                                    0.02       3.99 r
+  U1483876/Y (INVX1)                                      0.03       4.01 f
+  U1445831/Y (INVX2)                                      0.03       4.04 r
+  U1426780/Y (OAI21X1)                                    0.02       4.06 f
+  U1453617/Y (OAI21X1)                                    0.02       4.08 r
+  U1449654/Y (INVX2)                                      0.03       4.11 f
+  U1426761/Y (OAI21X1)                                    0.04       4.15 r
+  U1531695/Y (INVX1)                                      0.02       4.18 f
+  U1426760/Y (AOI21X1)                                    0.02       4.19 r
+  U1483963/Y (INVX1)                                      0.02       4.22 f
+  U1483965/Y (INVX1)                                      0.03       4.25 r
+  U1426750/Y (AOI21X1)                                    0.02       4.26 f
+  U1522700/Y (BUFX2)                                      0.04       4.31 f
+  U1532735/Y (INVX1)                                      0.01       4.31 r
+  U1426747/Y (AOI21X1)                                    0.01       4.32 f
+  U1455097/Y (BUFX2)                                      0.03       4.36 f
+  U1426746/Y (AOI21X1)                                    0.01       4.37 r
+  U1482506/Y (INVX1)                                      0.02       4.39 f
+  U1482507/Y (INVX1)                                      0.02       4.41 r
+  U1426743/Y (AOI21X1)                                    0.02       4.43 f
+  U1531505/Y (INVX1)                                      0.04       4.47 r
+  U1426741/Y (AOI21X1)                                    0.03       4.50 f
+  U1517666/Y (BUFX2)                                      0.03       4.54 f
+  U1426740/Y (AOI21X1)                                    0.01       4.55 r
+  U1517665/Y (BUFX2)                                      0.05       4.60 r
+  U1426739/Y (OAI21X1)                                    0.02       4.61 f
+  U1426738/Y (OAI21X1)                                    0.03       4.65 r
+  U1426734/Y (OAI21X1)                                    0.03       4.67 f
+  U1532555/Y (INVX1)                                      0.00       4.67 r
+  U1426733/Y (AOI21X1)                                    0.01       4.68 f
+  U1514502/Y (BUFX2)                                      0.05       4.73 f
+  U1378988/Y (OAI21X1)                                    0.04       4.77 r
+  U1532355/Y (INVX1)                                      0.02       4.79 f
+  U1378987/Y (AOI21X1)                                    0.02       4.81 r
+  U1523336/Y (BUFX2)                                      0.06       4.86 r
+  U1378977/Y (OAI21X1)                                    0.02       4.88 f
+  U1535719/Y (INVX1)                                      0.00       4.88 r
+  U1378976/Y (AOI21X1)                                    0.01       4.89 f
+  U1518699/Y (BUFX2)                                      0.05       4.94 f
+  U1449684/Y (OR2X1)                                      0.04       4.98 f
+  U1378973/Y (AOI22X1)                                    0.04       5.02 r
+  U1506567/Y (BUFX2)                                      0.05       5.07 r
+  U1378971/YS (FAX1)                                      0.09       5.15 f
+  U1378970/Y (AOI22X1)                                    0.03       5.18 r
+  U1455113/Y (BUFX2)                                      0.04       5.22 r
+  U1378950/Y (NAND3X1)                                    0.02       5.24 f
+  U1455240/Y (BUFX2)                                      0.03       5.27 f
+  U1378945/Y (NOR3X1)                                     0.05       5.32 r
+  U1378944/Y (NAND3X1)                                    0.02       5.34 f
+  proc_3/WB_alu_result_reg[0]/D (DFFPOSX1)                0.00       5.34 f
+  data arrival time                                                  5.34
+
+  clock clk (rise edge)                                   4.90       4.90
+  clock network delay (ideal)                             0.50       5.40
+  proc_3/WB_alu_result_reg[0]/CLK (DFFPOSX1)              0.00       5.40 r
+  library setup time                                     -0.06       5.34
+  data required time                                                 5.34
+  --------------------------------------------------------------------------
+  data required time                                                 5.34
+  data arrival time                                                 -5.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

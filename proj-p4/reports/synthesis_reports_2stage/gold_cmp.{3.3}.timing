@@ -1,0 +1,185 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'gold_cmp' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : gold_cmp
+Version: F-2011.09-SP2
+Date   : Tue Apr 12 20:29:49 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: proc_2/ALU/ALU_MUL32/mult_96/clk_r_REG544_S1
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: proc_2/WB_alu_result_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  proc_2/ALU/ALU_MUL32/mult_96/clk_r_REG544_S1/CLK (DFFPOSX1)
+                                                          0.00 #     0.50 r
+  proc_2/ALU/ALU_MUL32/mult_96/clk_r_REG544_S1/Q (DFFPOSX1)
+                                                          0.10       0.60 f
+  proc_2/ALU/ALU_MUL32/mult_96/U6234/Y (AOI22X1)          0.05       0.65 r
+  proc_2/ALU/ALU_MUL32/mult_96/U7527/Y (BUFX2)            0.03       0.69 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4212/Y (AND2X2)           0.04       0.72 r
+  proc_2/ALU/ALU_MUL32/mult_96/U3886/Y (XNOR2X1)          0.04       0.76 r
+  proc_2/ALU/ALU_MUL32/mult_96/U3843/Y (INVX2)            0.03       0.79 f
+  proc_2/ALU/ALU_MUL32/mult_96/U6194/YS (FAX1)            0.08       0.87 r
+  proc_2/ALU/ALU_MUL32/mult_96/U7268/Y (INVX1)            0.02       0.89 f
+  proc_2/ALU/ALU_MUL32/mult_96/U7153/Y (INVX1)            0.00       0.90 r
+  proc_2/ALU/ALU_MUL32/mult_96/U6184/Y (AOI21X1)          0.01       0.91 f
+  proc_2/ALU/ALU_MUL32/mult_96/U4114/Y (BUFX2)            0.04       0.95 f
+  proc_2/ALU/ALU_MUL32/mult_96/U6168/Y (AOI21X1)          0.03       0.98 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4116/Y (BUFX2)            0.04       1.01 r
+  proc_2/ALU/ALU_MUL32/mult_96/U7054/Y (INVX1)            0.02       1.03 f
+  proc_2/ALU/ALU_MUL32/mult_96/U7103/Y (OAI21X1)          0.04       1.07 r
+  proc_2/ALU/ALU_MUL32/mult_96/U6166/YS (FAX1)            0.09       1.16 f
+  proc_2/ALU/ALU_MUL32/mult_96/U3981/Y (INVX1)            0.00       1.16 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4070/Y (AND2X2)           0.03       1.19 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4071/Y (INVX1)            0.01       1.20 f
+  proc_2/ALU/ALU_MUL32/mult_96/U4152/Y (AND2X2)           0.03       1.24 f
+  proc_2/ALU/ALU_MUL32/mult_96/U3931/Y (AND2X2)           0.03       1.27 f
+  proc_2/ALU/ALU_MUL32/mult_96/U3871/Y (INVX1)            0.00       1.27 r
+  proc_2/ALU/ALU_MUL32/mult_96/U7413/Y (AOI21X1)          0.01       1.28 f
+  proc_2/ALU/ALU_MUL32/mult_96/U4160/Y (BUFX2)            0.04       1.32 f
+  proc_2/ALU/ALU_MUL32/mult_96/U5719/Y (OAI21X1)          0.04       1.35 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4030/Y (AND2X2)           0.03       1.39 r
+  proc_2/ALU/ALU_MUL32/mult_96/U3957/Y (OR2X2)            0.05       1.43 r
+  proc_2/ALU/ALU_MUL32/mult_96/U7222/Y (AND2X2)           0.03       1.46 r
+  proc_2/ALU/ALU_MUL32/mult_96/U5709/Y (AOI21X1)          0.01       1.48 f
+  proc_2/ALU/ALU_MUL32/mult_96/U4302/Y (BUFX2)            0.04       1.52 f
+  proc_2/ALU/ALU_MUL32/mult_96/U5486/Y (OAI21X1)          0.04       1.55 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4163/Y (AND2X2)           0.04       1.59 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4164/Y (INVX1)            0.02       1.61 f
+  proc_2/ALU/ALU_MUL32/mult_96/U5478/Y (OAI21X1)          0.04       1.65 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4120/Y (AND2X2)           0.04       1.69 r
+  proc_2/ALU/ALU_MUL32/mult_96/U3961/Y (OR2X2)            0.04       1.72 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4822/Y (AOI22X1)          0.03       1.75 f
+  proc_2/ALU/ALU_MUL32/mult_96/U4269/Y (BUFX2)            0.04       1.79 f
+  proc_2/ALU/ALU_MUL32/mult_96/U4821/Y (OAI21X1)          0.04       1.83 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4125/Y (AND2X2)           0.04       1.86 r
+  proc_2/ALU/ALU_MUL32/mult_96/U3938/Y (OR2X2)            0.04       1.90 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4800/Y (AOI21X1)          0.01       1.92 f
+  proc_2/ALU/ALU_MUL32/mult_96/U4162/Y (BUFX2)            0.04       1.96 f
+  proc_2/ALU/ALU_MUL32/mult_96/U4789/Y (OAI21X1)          0.04       2.00 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4328/Y (AOI21X1)          0.02       2.02 f
+  proc_2/ALU/ALU_MUL32/mult_96/U4159/Y (BUFX2)            0.04       2.05 f
+  proc_2/ALU/ALU_MUL32/mult_96/U4322/Y (OAI21X1)          0.04       2.10 r
+  proc_2/ALU/ALU_MUL32/mult_96/U7404/Y (AOI21X1)          0.02       2.12 f
+  proc_2/ALU/ALU_MUL32/mult_96/U4115/Y (BUFX2)            0.04       2.15 f
+  proc_2/ALU/ALU_MUL32/mult_96/U6963/Y (INVX1)            0.00       2.15 r
+  proc_2/ALU/ALU_MUL32/mult_96/U4082/Y (AND2X2)           0.03       2.18 r
+  proc_2/ALU/ALU_MUL32/mult_96/U3945/Y (OR2X2)            0.04       2.22 r
+  proc_2/ALU/ALU_MUL32/mult_96/product[50] (alu_1_DW_mult_tc_1)
+                                                          0.00       2.22 r
+  proc_2/ALU/ALU_MUL32/PRODUCT[50] (alu_1_DW02_mult_2_stage_0)
+                                                          0.00       2.22 r
+  proc_2/ALU/mult32_result[13] (alu_1)                    0.00       2.22 r
+  proc_2/U561/Y (AND2X2)                                  0.03       2.25 r
+  proc_2/U233/Y (OR2X2)                                   0.04       2.29 r
+  proc_2/U234/Y (INVX1)                                   0.02       2.31 f
+  proc_2/U2145/Y (NAND3X1)                                0.03       2.34 r
+  proc_2/ALU/oprA[13] (alu_1)                             0.00       2.34 r
+  proc_2/ALU/U387/Y (BUFX2)                               0.04       2.38 r
+  proc_2/ALU/mult_192/a[2] (alu_1_DW_mult_uns_36)         0.00       2.38 r
+  proc_2/ALU/mult_192/U1016/Y (INVX1)                     0.02       2.40 f
+  proc_2/ALU/mult_192/U1985/Y (OAI21X1)                   0.06       2.46 r
+  proc_2/ALU/mult_192/U1041/Y (AND2X2)                    0.03       2.49 r
+  proc_2/ALU/mult_192/U1794/Y (INVX1)                     0.02       2.51 f
+  proc_2/ALU/mult_192/U1125/Y (OR2X2)                     0.04       2.54 f
+  proc_2/ALU/mult_192/U1018/Y (AND2X2)                    0.03       2.58 f
+  proc_2/ALU/mult_192/U1238/Y (AND2X2)                    0.04       2.61 f
+  proc_2/ALU/mult_192/U1124/Y (INVX1)                     0.00       2.61 r
+  proc_2/ALU/mult_192/U1019/Y (AND2X2)                    0.03       2.64 r
+  proc_2/ALU/mult_192/U1106/Y (INVX1)                     0.01       2.65 f
+  proc_2/ALU/mult_192/U1724/Y (OAI21X1)                   0.02       2.67 r
+  proc_2/ALU/mult_192/U1227/Y (AND2X2)                    0.03       2.71 r
+  proc_2/ALU/mult_192/U1230/Y (INVX1)                     0.02       2.72 f
+  proc_2/ALU/mult_192/U1708/Y (OAI21X1)                   0.02       2.74 r
+  proc_2/ALU/mult_192/U1341/Y (AND2X2)                    0.03       2.78 r
+  proc_2/ALU/mult_192/U908/Y (OR2X2)                      0.04       2.82 r
+  proc_2/ALU/mult_192/U1386/Y (OR2X2)                     0.04       2.86 r
+  proc_2/ALU/mult_192/U915/Y (INVX1)                      0.02       2.87 f
+  proc_2/ALU/mult_192/U1681/Y (OAI21X1)                   0.04       2.92 r
+  proc_2/ALU/mult_192/U1680/Y (OAI21X1)                   0.02       2.94 f
+  proc_2/ALU/mult_192/U987/Y (OAI21X1)                    0.02       2.96 r
+  proc_2/ALU/mult_192/U988/Y (INVX2)                      0.02       2.98 f
+  proc_2/ALU/mult_192/U1677/Y (OAI21X1)                   0.04       3.03 r
+  proc_2/ALU/mult_192/U2483/Y (AOI21X1)                   0.02       3.05 f
+  proc_2/ALU/mult_192/U1368/Y (BUFX2)                     0.04       3.09 f
+  proc_2/ALU/mult_192/U979/Y (OAI21X1)                    0.04       3.13 r
+  proc_2/ALU/mult_192/U1666/Y (AOI21X1)                   0.02       3.15 f
+  proc_2/ALU/mult_192/U1374/Y (BUFX2)                     0.04       3.18 f
+  proc_2/ALU/mult_192/U1664/Y (OAI21X1)                   0.04       3.23 r
+  proc_2/ALU/mult_192/U1662/Y (AOI21X1)                   0.02       3.25 f
+  proc_2/ALU/mult_192/U1160/Y (BUFX2)                     0.03       3.28 f
+  proc_2/ALU/mult_192/U1017/Y (INVX1)                     0.00       3.28 r
+  proc_2/ALU/mult_192/U1103/Y (AND2X2)                    0.03       3.31 r
+  proc_2/ALU/mult_192/U1104/Y (INVX1)                     0.02       3.33 f
+  proc_2/ALU/mult_192/U1183/Y (AND2X2)                    0.03       3.36 f
+  proc_2/ALU/mult_192/U1190/Y (INVX1)                     0.00       3.36 r
+  proc_2/ALU/mult_192/U2484/Y (AND2X2)                    0.03       3.39 r
+  proc_2/ALU/mult_192/U2457/Y (INVX1)                     0.02       3.41 f
+  proc_2/ALU/mult_192/U1645/Y (OAI21X1)                   0.04       3.45 r
+  proc_2/ALU/mult_192/U919/Y (AND2X2)                     0.04       3.49 r
+  proc_2/ALU/mult_192/U1392/Y (INVX1)                     0.02       3.50 f
+  proc_2/ALU/mult_192/U1494/Y (OAI21X1)                   0.04       3.55 r
+  proc_2/ALU/mult_192/U1213/Y (AND2X2)                    0.04       3.58 r
+  proc_2/ALU/mult_192/U993/Y (OR2X2)                      0.04       3.62 r
+  proc_2/ALU/mult_192/U2356/Y (OAI21X1)                   0.02       3.64 f
+  proc_2/ALU/mult_192/U1263/Y (OAI21X1)                   0.05       3.69 r
+  proc_2/ALU/mult_192/U1236/Y (AOI21X1)                   0.02       3.71 f
+  proc_2/ALU/mult_192/U1378/Y (BUFX2)                     0.04       3.75 f
+  proc_2/ALU/mult_192/U1212/Y (OAI21X1)                   0.04       3.79 r
+  proc_2/ALU/mult_192/U1191/Y (AOI21X1)                   0.02       3.81 f
+  proc_2/ALU/mult_192/U1379/Y (BUFX2)                     0.04       3.85 f
+  proc_2/ALU/mult_192/U1172/Y (OAI21X1)                   0.04       3.89 r
+  proc_2/ALU/mult_192/U1170/Y (AOI21X1)                   0.02       3.91 f
+  proc_2/ALU/mult_192/U1165/Y (BUFX2)                     0.04       3.95 f
+  proc_2/ALU/mult_192/U1005/Y (INVX1)                     0.00       3.95 r
+  proc_2/ALU/mult_192/U1150/Y (AOI21X1)                   0.01       3.97 f
+  proc_2/ALU/mult_192/U1149/Y (AOI21X1)                   0.02       3.99 r
+  proc_2/ALU/mult_192/U1147/Y (AOI22X1)                   0.03       4.02 f
+  proc_2/ALU/mult_192/U1407/Y (BUFX2)                     0.04       4.06 f
+  proc_2/ALU/mult_192/U2761/Y (XNOR2X1)                   0.03       4.09 f
+  proc_2/ALU/mult_192/product[31] (alu_1_DW_mult_uns_36)
+                                                          0.00       4.09 f
+  proc_2/ALU/U6195/Y (AOI22X1)                            0.03       4.12 r
+  proc_2/ALU/U6197/Y (NAND3X1)                            0.03       4.15 f
+  proc_2/ALU/U352/Y (OR2X2)                               0.04       4.19 f
+  proc_2/ALU/U353/Y (INVX1)                               0.00       4.19 r
+  proc_2/ALU/U6198/Y (NAND3X1)                            0.01       4.19 f
+  proc_2/ALU/U322/Y (AND2X2)                              0.03       4.23 f
+  proc_2/ALU/U254/Y (INVX1)                               0.00       4.22 r
+  proc_2/ALU/U323/Y (AND2X2)                              0.03       4.26 r
+  proc_2/ALU/U324/Y (INVX1)                               0.01       4.27 f
+  proc_2/ALU/result[0] (alu_1)                            0.00       4.27 f
+  proc_2/U3/Y (AND2X2)                                    0.03       4.30 f
+  proc_2/WB_alu_result_reg[0]/D (DFFPOSX1)                0.00       4.30 f
+  data arrival time                                                  4.30
+
+  clock clk (rise edge)                                   3.30       3.30
+  clock network delay (ideal)                             0.50       3.80
+  proc_2/WB_alu_result_reg[0]/CLK (DFFPOSX1)              0.00       3.80 r
+  library setup time                                     -0.06       3.74
+  data required time                                                 3.74
+  --------------------------------------------------------------------------
+  data required time                                                 3.74
+  data arrival time                                                 -4.30
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.56
+
+
+1

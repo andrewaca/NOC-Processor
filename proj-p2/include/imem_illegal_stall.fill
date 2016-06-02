@@ -1,0 +1,4 @@
+80200001 	// stall test start - legal load VLD $1, 0001 
+A8210DC6 	// 101010 00001 00001 00001 10111 000110 - illegal PPP - VADDbw $1, $1, $1
+84200003 	// stall test end - store $1, 3 - will stall or not?
+00000000	

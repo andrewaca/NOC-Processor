@@ -1,0 +1,6 @@
+README
+------
+
+If there are warnings about disk quota, only upload one sdf file that is needed for the specific test - synthesis or pnr testbench.
+
+The current status of the project is that all parts are completed and verified.

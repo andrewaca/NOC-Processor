@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : area
+Design : gold_router
+Version: F-2011.09-SP2
+Date   : Mon Mar  7 22:46:21 2016
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+Number of ports:                          399
+Number of nets:                           607
+Number of cells:                           10
+Number of combinational cells:              3
+Number of sequential cells:                 1
+Number of macros:                           0
+Number of buf/inv:                          3
+Number of references:                       8
+
+Combinational area:       11387.564250
+Noncombinational area:    8125.460373
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          19513.024623
+Total area:                 undefined
+1

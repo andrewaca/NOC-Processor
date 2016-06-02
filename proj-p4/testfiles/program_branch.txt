@@ -1,0 +1,17 @@
+VLD $1, 1
+VLD $3, 3
+VNOP
+VSUBad $3, $3, $1
+VNOP
+VNOP
+VBEZ $3, 2C
+VMOVad $5, $3
+VNOP
+VNOP
+VBNEZ $5, C
+VSD $5, 000a
+VSD $3, 000b
+VNOP
+
+
+

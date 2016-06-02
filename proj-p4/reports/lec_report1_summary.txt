@@ -1,0 +1,7 @@
+Our first lec run had many non-equivalences. The step we took to debug this were:
+1) Try performing lec on individual modules - isolated ALU
+2) Replace Designware 2-stage multiplier with our own multiplier
+3) This fixed all non-equivalences, but created abort points
+4) Try many different options within lec and try allowing lec to run longer
+5) Read conformal user-guide about abort points
+6) Try hierarchical compare, which resolved abort points

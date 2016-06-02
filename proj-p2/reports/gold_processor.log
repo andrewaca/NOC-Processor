@@ -1,0 +1,90 @@
+ 
+****************************************
+check_design summary:
+Version:     F-2011.09-SP2
+Date:        Wed Mar 30 20:21:55 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     31
+    Shorted outputs (LINT-31)                                      15
+    Constant outputs (LINT-52)                                     16
+
+Nets                                                               41
+    Unloaded nets (LINT-2)                                         41
+--------------------------------------------------------------------------------
+
+Warning: In design 'gold_processor', net 'PC/net281' driven by pin 'PC/C195/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net423' driven by pin 'ALU/C3672/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net422' driven by pin 'ALU/C3671/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net421' driven by pin 'ALU/C3670/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net420' driven by pin 'ALU/C3669/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net419' driven by pin 'ALU/C3663/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net418' driven by pin 'ALU/C3662/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net417' driven by pin 'ALU/C3661/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net416' driven by pin 'ALU/C3660/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net415' driven by pin 'ALU/C3654/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net414' driven by pin 'ALU/C3653/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net413' driven by pin 'ALU/C3652/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net412' driven by pin 'ALU/C3651/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net411' driven by pin 'ALU/C3645/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net410' driven by pin 'ALU/C3644/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net409' driven by pin 'ALU/C3643/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net408' driven by pin 'ALU/C3642/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net407' driven by pin 'ALU/C3636/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net406' driven by pin 'ALU/C3635/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net405' driven by pin 'ALU/C3634/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net404' driven by pin 'ALU/C3633/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net403' driven by pin 'ALU/C3627/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net402' driven by pin 'ALU/C3626/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net401' driven by pin 'ALU/C3625/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net400' driven by pin 'ALU/C3624/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net399' driven by pin 'ALU/C3610/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net398' driven by pin 'ALU/C3609/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net397' driven by pin 'ALU/C3604/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net396' driven by pin 'ALU/C3603/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net395' driven by pin 'ALU/C3598/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net394' driven by pin 'ALU/C3597/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net393' driven by pin 'ALU/C3591/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net392' driven by pin 'ALU/C3590/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net391' driven by pin 'ALU/C3584/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net390' driven by pin 'ALU/C3583/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net389' driven by pin 'ALU/C3582/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net388' driven by pin 'ALU/C3581/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net387' driven by pin 'ALU/C3577/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net386' driven by pin 'ALU/C3576/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net385' driven by pin 'ALU/C3575/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', net 'ALU/net384' driven by pin 'ALU/C3574/Z' has no loads. (LINT-2)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[15]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[14]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[13]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[12]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[11]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[10]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[9]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[8]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[7]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[6]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[5]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[4]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[3]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[2]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to output port 'memAddr[1]'. (LINT-31)
+Warning: In design 'gold_processor', output port 'memAddr[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[8]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[9]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[10]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[11]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[12]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[13]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[14]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'gold_processor', output port 'memAddr[15]' is connected directly to 'logic 0'. (LINT-52)
+1

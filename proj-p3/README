@@ -1,0 +1,36 @@
+README
+------
+
+1. Update AUTHORS file, add your firstname and LastName as -
+   FirstName1_LastName1
+   
+   If multiple authors, list individual authors in separate lines as - 
+   FirstName1_LastName1
+   FirstName2_LastName2
+   
+   Avoid spaces in the name, use underscore (_) to separate different name-words.
+   The script is designed to select only first-part before the space as the name.
+
+2. Read makefile carefully before using.
+
+3. "make clean" command will delete all the temporary files created during the simulation.
+   It will delete all .log in the directory where makefile is located. 
+   Keep all your reports in reports/ otherwise if they are in the directory of makefile, it will be deleted.
+  
+4. Use "make submit" command to create the final submission. The command will create the tar-ball, it will
+   be named based on AUTHORS file. It will first perform "make clean" to remove simulation generated files 
+   before creating the tar-file, this reduces the size of submission. 
+   
+   You can test your submission with "tar tvf  <TarFile> " command. 
+   This lists all the files included in tar-file. 
+   If you want to extract and test, the first create a temp directory to avoid overwriting existing files. 
+   For example- 
+   mkdir tar_temp
+   tar xvf <TarFile> -C ./tar_temp/
+   The tar-file will be extracted in tar_temp directory. 
+
+Assignment Specific Info
+---------------------------
+
+ 
+

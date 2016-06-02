@@ -1,0 +1,81 @@
+                          CONFORMAL (R)
+                   Version 11.10-s440 (27-Sep-2012) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2012. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Command: set parallel option -threads 16
+// Number of threads is set to 16,16.
+// Command: read design /home/scf-36/aadam/ee577b/proj-p4/design/alu.v   /home/scf-36/aadam/ee577b/proj-p4/design/cpu.v   /home/scf-36/aadam/ee577b/proj-p4/design/gold_cmp.v   /home/scf-36/aadam/ee577b/proj-p4/design/gold_nic.v   /home/scf-36/aadam/ee577b/proj-p4/design/gold_ring.v   /home/scf-36/aadam/ee577b/proj-p4/design/gold_router.v -Verilog2K -Golden   -sensitive         -continuousassignment Unidirectional   -nokeep_unreach   -nosupply 
+// Parsing file /home/scf-36/aadam/ee577b/proj-p4/design/alu.v ...
+// Parsing file /home/scf-36/aadam/ee577b/proj-p4/design/cpu.v ...
+// Parsing file /home/scf-36/aadam/ee577b/proj-p4/design/gold_cmp.v ...
+// Parsing file /home/scf-36/aadam/ee577b/proj-p4/design/gold_nic.v ...
+// Parsing file /home/scf-36/aadam/ee577b/proj-p4/design/gold_ring.v ...
+// Parsing file /home/scf-36/aadam/ee577b/proj-p4/design/gold_router.v ...
+// Golden root module is set to 'gold_cmp'
+// Warning: (RTL1.4) Assignment with LHS bit width is greater than RHS bit width (occurrence:18)
+// Warning: (RTL1.5a) Assignment with RHS bit width is greater than LHS bit width (occurrence:53)
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:35)
+// Warning: (RTL5.3) Case expressions/items are resized (occurrence:14)
+// Warning: (RTL7.10) Comparison with signed and unsigned operands (occurrence:2)
+// Note: (RTL8.1) Multiple multipliers/dividers are in module/entity (occurrence:1)
+// Warning: (RTL8.3) Unreachable DFF/DLAT is removed (occurrence:2)
+// Warning: (RTL14) Signal has input but it has no output (occurrence:2)
+// Note: (VLG9.2) The `define macro is used (occurrence:43)
+// Warning: (HRC3.8) Port positional association occurs in an instantiation (occurrence:1)
+// Warning: (HRC3.16) A wire is declared, but not used in the module (occurrence:1)
+// Note: Read VERILOG design successfully
+// Command: read library -Revised -Replace  -sensitive    -Verilog2K /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.v -nooptimize   
+// Parsing file /home/scf-22/ee577/NCSU45PDK/FreePDK45/osu_soc/lib/files/gscl45nm.v ...
+// Warning: (RTL14) Signal has input but it has no output (occurrence:6)
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:1)
+// Warning: (DIR6.1) Ignored compiler directive is detected (occurrence:32)
+// Warning: (DIR6.2) Supported compiler directive is detected (occurrence:64)
+// Note: Read VERILOG library successfully
+// Command: read design /home/scf-36/aadam/ee577b/proj-p4/netlist/gold_cmp.syn.v -Verilog2K -Revised   -sensitive         -continuousassignment Unidirectional   -nokeep_unreach   -nosupply 
+// Parsing file /home/scf-36/aadam/ee577b/proj-p4/netlist/gold_cmp.syn.v ...
+// Revised root module is set to 'gold_cmp'
+// Warning: (RTL2.13) Undriven pin is detected (occurrence:180)
+// Warning: (RTL14) Signal has input but it has no output (occurrence:120)
+// Note: (HRC3.5b) Open output port connection is detected (occurrence:226)
+// Warning: (HRC3.10a) An input port is declared, but it is not completely used in the module (occurrence:512)
+// Warning: There are 180 undriven nets in Revised
+// Warning: There are 180 undriven pins in Revised
+// Note: Read VERILOG design successfully
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// (F28) Converted 180 internal output port(s) to inout port(s)
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            386    520    13348     14254   
+--------------------------------------------------------------------------------
+Revised           386    520    13348     14254   
+================================================================================
+// Command: add compared points -all
+// 13868 compared points added to compare list
+// Command: compare -NONEQ_Print -NONEQ_Stop 1
+// Compare will stop on the 1st non-equivalent point
+                                                                               Non-equivalent points:
+  (G) + 516    PO   /node0_memEn
+  (R) + 516    PO   /node0_memEn
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           256    0         256     
+--------------------------------------------------------------------------------
+Non-equivalent       1      0         1       
+--------------------------------------------------------------------------------
+Not-compared         263    13348     13611   
+================================================================================
+// Command: exit

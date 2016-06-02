@@ -1,0 +1,179 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'gold_cmp' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : gold_cmp
+Version: F-2011.09-SP2
+Date   : Wed Apr 20 01:39:42 2016
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: node3_d_in[57]
+              (input port clocked by clk)
+  Endpoint: proc_3/WB_alu_result_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    1.00       1.50 r
+  node3_d_in[57] (in)                                     0.00       1.50 r
+  proc_3/dataIn[57] (gold_processor_1)                    0.00       1.50 r
+  proc_3/U85/Y (AND2X1)                                   0.03       1.53 r
+  proc_3/U194/Y (INVX1)                                   0.02       1.55 f
+  proc_3/U1809/Y (OAI21X1)                                0.06       1.60 r
+  proc_3/ALU/oprA[57] (alu_1)                             0.00       1.60 r
+  proc_3/ALU/mult_240/b[6] (alu_1_DW_mult_uns_31)         0.00       1.60 r
+  proc_3/ALU/mult_240/U1590/Y (AND2X2)                    0.03       1.64 r
+  proc_3/ALU/mult_240/U1677/Y (INVX1)                     0.01       1.65 f
+  proc_3/ALU/mult_240/U1471/Y (AND2X2)                    0.03       1.68 f
+  proc_3/ALU/mult_240/U1472/Y (INVX1)                     0.00       1.68 r
+  proc_3/ALU/mult_240/U1586/Y (AND2X2)                    0.03       1.71 r
+  proc_3/ALU/mult_240/U1334/Y (INVX1)                     0.03       1.74 f
+  proc_3/ALU/mult_240/U651/YS (FAX1)                      0.08       1.82 f
+  proc_3/ALU/mult_240/U1343/Y (INVX1)                     0.00       1.82 r
+  proc_3/ALU/mult_240/U1429/Y (AND2X2)                    0.03       1.85 r
+  proc_3/ALU/mult_240/U1359/Y (INVX1)                     0.01       1.87 f
+  proc_3/ALU/mult_240/U1475/Y (AND2X2)                    0.03       1.90 f
+  proc_3/ALU/mult_240/U1476/Y (INVX1)                     0.00       1.90 r
+  proc_3/ALU/mult_240/U1531/Y (AND2X2)                    0.03       1.93 r
+  proc_3/ALU/mult_240/U1341/Y (INVX1)                     0.02       1.94 f
+  proc_3/ALU/mult_240/U176/Y (AOI21X1)                    0.03       1.98 r
+  proc_3/ALU/mult_240/U1533/Y (BUFX2)                     0.04       2.02 r
+  proc_3/ALU/mult_240/U170/Y (OAI21X1)                    0.02       2.03 f
+  proc_3/ALU/mult_240/U162/Y (AOI21X1)                    0.03       2.07 r
+  proc_3/ALU/mult_240/U1509/Y (BUFX2)                     0.03       2.10 r
+  proc_3/ALU/mult_240/U156/Y (OAI21X1)                    0.02       2.12 f
+  proc_3/ALU/mult_240/U1915/Y (AOI21X1)                   0.03       2.15 r
+  proc_3/ALU/mult_240/U1514/Y (BUFX2)                     0.04       2.19 r
+  proc_3/ALU/mult_240/U1303/Y (OR2X2)                     0.04       2.23 r
+  proc_3/ALU/mult_240/U1527/Y (AND2X2)                    0.03       2.26 r
+  proc_3/ALU/mult_240/U1377/Y (OAI21X1)                   0.02       2.28 f
+  proc_3/ALU/mult_240/U1229/Y (INVX1)                     0.00       2.28 r
+  proc_3/ALU/mult_240/U128/Y (OAI21X1)                    0.02       2.30 f
+  proc_3/ALU/mult_240/U126/YC (FAX1)                      0.08       2.38 f
+  proc_3/ALU/mult_240/U125/YC (FAX1)                      0.08       2.47 f
+  proc_3/ALU/mult_240/U124/YC (FAX1)                      0.08       2.55 f
+  proc_3/ALU/mult_240/U123/YC (FAX1)                      0.08       2.63 f
+  proc_3/ALU/mult_240/U1577/Y (AND2X2)                    0.04       2.67 f
+  proc_3/ALU/mult_240/U1578/Y (INVX1)                     0.00       2.66 r
+  proc_3/ALU/mult_240/U1919/Y (NAND3X1)                   0.01       2.67 f
+  proc_3/ALU/mult_240/U1521/Y (BUFX2)                     0.04       2.71 f
+  proc_3/ALU/mult_240/U1457/Y (AND2X2)                    0.03       2.74 f
+  proc_3/ALU/mult_240/U1382/Y (OR2X2)                     0.04       2.78 f
+  proc_3/ALU/mult_240/U1381/Y (OR2X2)                     0.04       2.82 f
+  proc_3/ALU/mult_240/U120/YC (FAX1)                      0.08       2.90 f
+  proc_3/ALU/mult_240/U119/YC (FAX1)                      0.08       2.99 f
+  proc_3/ALU/mult_240/U118/YC (FAX1)                      0.08       3.07 f
+  proc_3/ALU/mult_240/U117/YC (FAX1)                      0.08       3.16 f
+  proc_3/ALU/mult_240/U116/YC (FAX1)                      0.08       3.23 f
+  proc_3/ALU/mult_240/U1573/Y (AND2X2)                    0.04       3.27 f
+  proc_3/ALU/mult_240/U1574/Y (INVX1)                     0.00       3.27 r
+  proc_3/ALU/mult_240/U1918/Y (NAND3X1)                   0.01       3.28 f
+  proc_3/ALU/mult_240/U1520/Y (BUFX2)                     0.04       3.31 f
+  proc_3/ALU/mult_240/U1454/Y (AND2X2)                    0.03       3.35 f
+  proc_3/ALU/mult_240/U1347/Y (OR2X2)                     0.04       3.38 f
+  proc_3/ALU/mult_240/U1346/Y (OR2X2)                     0.04       3.43 f
+  proc_3/ALU/mult_240/U113/YC (FAX1)                      0.08       3.51 f
+  proc_3/ALU/mult_240/U112/YC (FAX1)                      0.08       3.59 f
+  proc_3/ALU/mult_240/U111/YC (FAX1)                      0.08       3.67 f
+  proc_3/ALU/mult_240/U1575/Y (AND2X2)                    0.04       3.71 f
+  proc_3/ALU/mult_240/U1368/Y (INVX1)                     0.00       3.71 r
+  proc_3/ALU/mult_240/U1778/Y (NAND3X1)                   0.01       3.72 f
+  proc_3/ALU/mult_240/U1518/Y (BUFX2)                     0.04       3.75 f
+  proc_3/ALU/mult_240/U1438/Y (AND2X2)                    0.03       3.78 f
+  proc_3/ALU/mult_240/U1344/Y (OR2X2)                     0.05       3.84 f
+  proc_3/ALU/mult_240/U108/YC (FAX1)                      0.08       3.92 f
+  proc_3/ALU/mult_240/U107/YC (FAX1)                      0.08       4.00 f
+  proc_3/ALU/mult_240/U106/YC (FAX1)                      0.08       4.09 f
+  proc_3/ALU/mult_240/U105/YC (FAX1)                      0.08       4.17 f
+  proc_3/ALU/mult_240/U104/YC (FAX1)                      0.08       4.25 f
+  proc_3/ALU/mult_240/U103/YC (FAX1)                      0.08       4.34 f
+  proc_3/ALU/mult_240/U102/YC (FAX1)                      0.08       4.42 f
+  proc_3/ALU/mult_240/U101/YC (FAX1)                      0.08       4.50 f
+  proc_3/ALU/mult_240/U1560/Y (AND2X2)                    0.04       4.54 f
+  proc_3/ALU/mult_240/U1561/Y (INVX1)                     0.00       4.54 r
+  proc_3/ALU/mult_240/U1763/Y (NAND3X1)                   0.01       4.55 f
+  proc_3/ALU/mult_240/U1516/Y (BUFX2)                     0.04       4.58 f
+  proc_3/ALU/mult_240/U1566/Y (AND2X2)                    0.03       4.62 f
+  proc_3/ALU/mult_240/U1567/Y (INVX1)                     0.00       4.62 r
+  proc_3/ALU/mult_240/U1790/Y (NAND3X1)                   0.01       4.63 f
+  proc_3/ALU/mult_240/U1517/Y (BUFX2)                     0.04       4.66 f
+  proc_3/ALU/mult_240/U1564/Y (AND2X2)                    0.03       4.70 f
+  proc_3/ALU/mult_240/U1351/Y (NOR3X1)                    0.02       4.72 r
+  proc_3/ALU/mult_240/U1352/Y (INVX2)                     0.02       4.74 f
+  proc_3/ALU/mult_240/U1440/Y (AND2X2)                    0.04       4.78 f
+  proc_3/ALU/mult_240/U1356/Y (OR2X2)                     0.04       4.83 f
+  proc_3/ALU/mult_240/U1436/Y (AND2X2)                    0.03       4.86 f
+  proc_3/ALU/mult_240/U1364/Y (OR2X2)                     0.04       4.89 f
+  proc_3/ALU/mult_240/U1363/Y (OR2X2)                     0.04       4.94 f
+  proc_3/ALU/mult_240/U95/YC (FAX1)                       0.08       5.02 f
+  proc_3/ALU/mult_240/U94/YC (FAX1)                       0.08       5.10 f
+  proc_3/ALU/mult_240/U93/YC (FAX1)                       0.08       5.19 f
+  proc_3/ALU/mult_240/U92/YC (FAX1)                       0.08       5.27 f
+  proc_3/ALU/mult_240/U91/YC (FAX1)                       0.08       5.36 f
+  proc_3/ALU/mult_240/U90/YC (FAX1)                       0.08       5.44 f
+  proc_3/ALU/mult_240/U89/YC (FAX1)                       0.08       5.52 f
+  proc_3/ALU/mult_240/U1537/Y (AND2X2)                    0.04       5.56 f
+  proc_3/ALU/mult_240/U1538/Y (INVX1)                     0.00       5.56 r
+  proc_3/ALU/mult_240/U1785/Y (NAND3X1)                   0.01       5.57 f
+  proc_3/ALU/mult_240/U1526/Y (BUFX2)                     0.04       5.60 f
+  proc_3/ALU/mult_240/U1434/Y (AND2X2)                    0.03       5.63 f
+  proc_3/ALU/mult_240/U1362/Y (OR2X2)                     0.04       5.67 f
+  proc_3/ALU/mult_240/U1361/Y (OR2X2)                     0.04       5.71 f
+  proc_3/ALU/mult_240/U1366/Y (AND2X2)                    0.03       5.74 f
+  proc_3/ALU/mult_240/U1425/Y (OR2X2)                     0.05       5.79 f
+  proc_3/ALU/mult_240/U1424/Y (OR2X2)                     0.04       5.83 f
+  proc_3/ALU/mult_240/U1803/Y (AOI21X1)                   0.03       5.85 r
+  proc_3/ALU/mult_240/U1519/Y (BUFX2)                     0.04       5.89 r
+  proc_3/ALU/mult_240/U1479/Y (AND2X2)                    0.03       5.92 r
+  proc_3/ALU/mult_240/U1480/Y (INVX1)                     0.01       5.93 f
+  proc_3/ALU/mult_240/U1812/Y (OAI21X1)                   0.02       5.96 r
+  proc_3/ALU/mult_240/U1522/Y (AND2X2)                    0.04       5.99 r
+  proc_3/ALU/mult_240/U1358/Y (OR2X2)                     0.04       6.03 r
+  proc_3/ALU/mult_240/U1579/Y (AND2X2)                    0.04       6.07 r
+  proc_3/ALU/mult_240/U1323/Y (INVX2)                     0.03       6.10 f
+  proc_3/ALU/mult_240/U1328/YC (FAX1)                     0.07       6.17 f
+  proc_3/ALU/mult_240/U1571/Y (AND2X2)                    0.04       6.21 f
+  proc_3/ALU/mult_240/U1572/Y (INVX1)                     0.00       6.21 r
+  proc_3/ALU/mult_240/U1855/Y (NAND3X1)                   0.01       6.21 f
+  proc_3/ALU/mult_240/U1515/Y (BUFX2)                     0.03       6.25 f
+  proc_3/ALU/mult_240/U1766/Y (INVX1)                     0.00       6.25 r
+  proc_3/ALU/mult_240/U1433/Y (OR2X2)                     0.04       6.29 r
+  proc_3/ALU/mult_240/U1853/Y (NAND3X1)                   0.01       6.30 f
+  proc_3/ALU/mult_240/product[63] (alu_1_DW_mult_uns_31)
+                                                          0.00       6.30 f
+  proc_3/ALU/U4409/Y (INVX1)                              0.00       6.30 r
+  proc_3/ALU/U603/Y (OR2X2)                               0.04       6.34 r
+  proc_3/ALU/U4555/Y (AND2X2)                             0.03       6.37 r
+  proc_3/ALU/U7481/Y (NAND3X1)                            0.01       6.38 f
+  proc_3/ALU/result[0] (alu_1)                            0.00       6.38 f
+  proc_3/U172/Y (BUFX2)                                   0.03       6.41 f
+  proc_3/U906/Y (AND2X1)                                  0.03       6.44 f
+  proc_3/WB_alu_result_reg[0]/D (DFFPOSX1)                0.00       6.44 f
+  data arrival time                                                  6.44
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             0.50       5.00
+  proc_3/WB_alu_result_reg[0]/CLK (DFFPOSX1)              0.00       5.00 r
+  library setup time                                     -0.06       4.94
+  data required time                                                 4.94
+  --------------------------------------------------------------------------
+  data required time                                                 4.94
+  data arrival time                                                 -6.44
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.50
+
+
+1
